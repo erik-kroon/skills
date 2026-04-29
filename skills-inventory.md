@@ -1,0 +1,23 @@
+# Skills Inventory
+
+Public skills: 16.
+
+## Public Skills
+
+- [context-map](skills/context-map/SKILL.md) - Zoom out from unfamiliar code or product area and produce a higher-level map of relevant modules, callers, data flow, domain terms, and where to inspect next. Use when the user asks to zoom out or needs orientation before acting.
+- [contract-review](skills/contract-review/SKILL.md) - Review code, diffs, and boundaries with findings-first output focused on correctness, data safety, trust boundaries, state transitions, permissions, and verification gaps. Use when the user asks for review or risk assessment.
+- [domain-grill](skills/domain-grill/SKILL.md) - Stress-test a plan, feature, or architecture decision against repo domain language, existing code, and documented decisions. Use when the user wants to be grilled, terminology is fuzzy, or a decision should update CONTEXT.md or ADRs.
+- [governance-distill](skills/governance-distill/SKILL.md) - Maintain prompts, skills, policies, and durable project knowledge by extracting stable rules from repeated work and removing stale or conflicting guidance. Use when agent instructions, skills, docs, or governance are drifting.
+- [handoff-brief](skills/handoff-brief/SKILL.md) - Package work so a future session, teammate, or agent can continue safely with context, changed files, verification artifacts, risks, and next actions. Use before delegation, after partial work, or when closing a task that may resume later.
+- [interface-craft](skills/interface-craft/SKILL.md) - Improve interface quality through mode-based design operations: critique, audit, polish, clarify, harden, adapt, distill, amplify, extract, and motion craft. Use for UI/UX/frontend work where taste, usability, resilience, or design-system quality matters.
+  - references: 10 mode files
+- [module-deepening](skills/module-deepening/SKILL.md) - Find architecture deepening opportunities that create simpler interfaces, better seams, stronger locality, and more testable modules. Use when code feels shallow, tangled, over-extracted, hard to test, or difficult for agents to navigate.
+- [product-brief](skills/product-brief/SKILL.md) - Turn conversation context, codebase findings, and product intent into a PRD-style brief without assuming a specific issue tracker. Use when the user wants a PRD, product brief, feature spec, or implementation-ready product artifact.
+- [proof-repair](skills/proof-repair/SKILL.md) - Repair broken, failing, flaky, slow, or incorrect behavior through evidence, root cause, minimal patch, and verification closure. Use for bugs, CI failures, regressions, incidents, and stabilization work.
+- [repo-context-bootstrap](skills/repo-context-bootstrap/SKILL.md) - Set up or repair repo-local agent context: agent guidance, domain docs, ADR layout, issue/work tracking conventions, labels, and skill usage notes. Use before applying a skill collection to a repo or when agents lack repo context.
+- [residue-hunt](skills/residue-hunt/SKILL.md) - Find and prioritize cleanup of dead code, fallback masks, mocks, TODO residue, stale bridges, duplicate surfaces, and AI-generated leftovers. Use when the user asks for cleanup candidates, deletion opportunities, residue scans, or stale code review.
+- [shape-contract](skills/shape-contract/SKILL.md) - Turn ambiguous or cross-surface work into an implementation contract with scope posture, requirements, risk tier, decision gates, and verification level. Use before building when requirements, sequencing, or safety are unclear.
+- [signal-cut](skills/signal-cut/SKILL.md) - Reduce scope to the smallest milestone that produces real delivery signal. Use when work is too broad, MVP scope is unclear, priorities are drifting, or the user asks what to keep, defer, freeze, or remove.
+- [test-first-delivery](skills/test-first-delivery/SKILL.md) - Build behavior-changing features and bugfixes with a failing-test-first delivery loop. Use when correctness matters, the user asks for TDD, or a change needs a verified behavior contract before implementation.
+- [verticalize-work](skills/verticalize-work/SKILL.md) - Convert a plan, PRD, idea, or backlog into independently executable vertical slices without assuming a specific issue tracker. Use when the user wants tickets, worker prompts, implementation slices, or a plan broken into agent-ready work.
+- [work-triage](skills/work-triage/SKILL.md) - Triage incoming issues, bugs, feature requests, or work items through a tracker-neutral state machine. Use when deciding whether work needs info, is ready for an agent, needs a human, is out of scope, or should be closed.
