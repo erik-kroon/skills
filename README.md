@@ -24,7 +24,7 @@ agent behavior in a concrete way, and produce an output that is easy to review.
 | [module-deepening](skills/module-deepening/SKILL.md) | Code feels shallow, tangled, hard to test, or hard to navigate | Find deeper modules, simpler interfaces, and better locality |
 | [residue-hunt](skills/residue-hunt/SKILL.md) | Code may contain dead paths, fallback masks, mocks, TODOs, or stale bridges | Classify cleanup candidates with evidence |
 | [contract-review](skills/contract-review/SKILL.md) | A diff or boundary needs risk review | Review correctness, data safety, trust, state, permission, and verification |
-| [interface-craft](skills/interface-craft/SKILL.md) | UI/UX/frontend work needs taste, polish, resilience, or design-system quality | Choose a mode: critique, audit, polish, clarify, harden, adapt, distill, amplify, extract, or motion |
+| [interface-craft](skills/interface-craft/SKILL.md) | UI/UX/frontend work needs taste, resilience, speed, brand fit, or design-system quality | Choose a mode: frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, onboard, speed, systemize, express, or motion |
 | [handoff-brief](skills/handoff-brief/SKILL.md) | Work must survive delegation or context switch | Capture context, verification, risks, and the next executable action |
 | [governance-distill](skills/governance-distill/SKILL.md) | Prompts, skills, policies, or durable docs are drifting | Extract stable rules and remove stale or conflicting guidance |
 
@@ -36,7 +36,7 @@ The library covers the full loop I want an agent to follow on real work:
 - Orientation: map unfamiliar areas, grill domain assumptions, and bootstrap repo context.
 - Delivery: slice work vertically, use test-first delivery, and repair failures with proof.
 - Quality: deepen modules, hunt residue, and review changed contracts.
-- Interface craft: critique, audit, polish, harden, clarify, adapt, simplify, amplify, extract, and tune motion.
+- Interface craft: frame direction, judge experience, scan quality, finish details, simplify flow, improve words, fortify edge cases, adapt layouts, compose space, tune type, onboard users, improve speed, systemize patterns, express personality, and tune motion.
 - Continuity: preserve handoffs, triage incoming work, and keep durable guidance coherent.
 
 ## Docs

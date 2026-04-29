@@ -52,7 +52,7 @@ output contract.
 | The architecture feels shallow or tangled | `module-deepening` |
 | You suspect dead code, mocks, fallbacks, or stale bridges | `residue-hunt` |
 | A diff or boundary needs review | `contract-review` |
-| UI needs critique, audit, polish, copy, hardening, adaptation, simplification, expression, extraction, or motion review | `interface-craft` |
+| UI needs framing, critique, audit, finishing, copy, hardening, adaptation, layout, typography, onboarding, performance, systemization, expression, or motion review | `interface-craft` |
 | Work needs to survive a handoff | `handoff-brief` |
 | Incoming work needs a state and next action | `work-triage` |
 | Instructions or durable docs are drifting | `governance-distill` |
@@ -61,15 +61,20 @@ output contract.
 
 | Mode | Output |
 | --- | --- |
-| `critique` | Design effectiveness feedback |
-| `audit` | Severity-ranked interface findings |
-| `polish` | Before/after quality pass |
-| `clarify` | Copy and terminology improvements |
-| `harden` | Edge-case and resilience fixes |
+| `frame` | Design brief before UI implementation |
+| `judge` | Experience quality, cognitive-load, and persona feedback |
+| `scan` | Severity-ranked interface findings |
+| `finish` | Before/after quality pass |
+| `simplify` | Removed complexity and simplified flow |
+| `word` | Copy and terminology improvements |
+| `fortify` | Edge-case and resilience fixes |
 | `adapt` | Context and device adaptation |
-| `distill` | Removed complexity and simplified flow |
-| `amplify` | Controlled expressive adjustment |
-| `extract` | Reusable components, tokens, and patterns |
+| `compose` | Layout, spacing, rhythm, and hierarchy improvements |
+| `type` | Typography and readability improvements |
+| `onboard` | First-run, empty-state, and activation improvements |
+| `speed` | Interface performance improvements |
+| `systemize` | Reusable components, tokens, and patterns |
+| `express` | Controlled expressive adjustment |
 | `motion` | Motion decision and review table |
 
 ## Add-A-Skill Rule
