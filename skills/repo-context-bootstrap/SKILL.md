@@ -1,6 +1,6 @@
 ---
 name: repo-context-bootstrap
-description: Set up or repair repo-local agent context: agent guidance, domain docs, ADR layout, issue/work tracking conventions, labels, and skill usage notes. Use before applying a skill collection to a repo or when agents lack repo context.
+description: "Set up or repair repo-local agent context: agent guidance, domain docs, ADR layout, issue/work tracking conventions, labels, and skill usage notes. Use before applying a skill collection to a repo or when agents lack repo context."
 ---
 
 # Repo Context Bootstrap
