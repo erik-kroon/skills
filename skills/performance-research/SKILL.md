@@ -1,6 +1,6 @@
 ---
 name: performance-research
-description: Improve performance through workload framing, measurement, current stack-specific research, bottleneck evidence, narrow optimization, and regression guards. Use when software is slow, resource-heavy, costly, or needs performance review beyond generic advice.
+description: Improve performance through workload framing, measurement, current stack-specific research, bottleneck evidence, narrow optimization, and regression guards. Use when software is slow, resource-heavy, costly, needs performance review beyond generic advice, or the user invokes performance research.
 ---
 
 # Performance Research
@@ -9,6 +9,22 @@ Use this skill to improve performance without relying on remembered
 optimization folklore. The durable behavior is the process: frame the workload,
 measure, research the exact stack and symptom, patch the proven bottleneck, and
 verify the same workload again.
+
+## Invocation Behavior
+
+Any invocation of performance research is a request to start the workflow, not
+only to acknowledge that the skill is loaded. If the user provides context,
+use that context to frame the workload first. If the user gives no specific
+workload, infer one from the current codebase, documentation, issue context,
+tests, benchmarks, build scripts, and likely user-facing or operational hot
+paths.
+
+Begin by gathering enough local evidence to identify the application type,
+entry points, performance-sensitive surfaces, and available measurement
+commands. State the inferred workload and assumption, then continue into the
+baseline step. Ask a clarifying question only when local context is insufficient
+to infer any meaningful workload or when measuring would require external
+credentials, production data, paid services, or destructive actions.
 
 ## Vocabulary
 
