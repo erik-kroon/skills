@@ -59,6 +59,12 @@
       "references": []
     },
     {
+      "name": "performance-research",
+      "description": "Improve performance through workload framing, measurement, current stack-specific research, bottleneck evidence, narrow optimization, and regression guards. Use when software is slow, resource-heavy, costly, or needs performance review beyond generic advice.",
+      "path": "skills/performance-research",
+      "references": []
+    },
+    {
       "name": "product-brief",
       "description": "Turn conversation context, codebase findings, and product intent into a PRD-style brief without assuming a specific issue tracker. Use when the user wants a PRD, product brief, feature spec, or implementation-ready product artifact.",
       "path": "skills/product-brief",
