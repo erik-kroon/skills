@@ -1,6 +1,6 @@
 # Skills Inventory
 
-Public skills: 16.
+Public skills: 17.
 
 ## Public Skills
 
@@ -12,6 +12,7 @@ Public skills: 16.
 - [interface-craft](skills/interface-craft/SKILL.md) - Improve interface quality through a first-party design operating system: frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, onboard, speed, systemize, express, and motion. Use for UI/UX/frontend work where taste, usability, resilience, brand fit, performance, or design-system quality matters.
   - references: 15 mode files
 - [module-deepening](skills/module-deepening/SKILL.md) - Find architecture deepening opportunities that create simpler interfaces, better seams, stronger locality, and more testable modules. Use when code feels shallow, tangled, over-extracted, hard to test, or difficult for agents to navigate.
+- [performance-research](skills/performance-research/SKILL.md) - Improve performance through workload framing, measurement, current stack-specific research, bottleneck evidence, narrow optimization, and regression guards. Use when software is slow, resource-heavy, costly, or needs performance review beyond generic advice.
 - [product-brief](skills/product-brief/SKILL.md) - Turn conversation context, codebase findings, and product intent into a PRD-style brief without assuming a specific issue tracker. Use when the user wants a PRD, product brief, feature spec, or implementation-ready product artifact.
 - [proof-repair](skills/proof-repair/SKILL.md) - Repair broken, failing, flaky, slow, or incorrect behavior through evidence, root cause, minimal patch, and verification closure. Use for bugs, CI failures, regressions, incidents, and stabilization work.
 - [repo-context-bootstrap](skills/repo-context-bootstrap/SKILL.md) - Set up or repair repo-local agent context: agent guidance, domain docs, ADR layout, issue/work tracking conventions, labels, and skill usage notes. Use before applying a skill collection to a repo or when agents lack repo context.

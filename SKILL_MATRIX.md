@@ -10,7 +10,7 @@ output contract.
 | --- | --- | --- |
 | Direction and scope | `signal-cut`, `shape-contract`, `product-brief` | Prevents vague goals, oversized milestones, and premature implementation |
 | Context and decisions | `context-map`, `domain-grill`, `repo-context-bootstrap` | Keeps agents grounded in repo language, architecture, and documented decisions |
-| Delivery and repair | `verticalize-work`, `test-first-delivery`, `proof-repair` | Turns intent into shippable slices and keeps behavior evidence-backed |
+| Delivery and repair | `verticalize-work`, `test-first-delivery`, `proof-repair`, `performance-research` | Turns intent into shippable slices and keeps behavior evidence-backed |
 | Code quality | `module-deepening`, `residue-hunt`, `contract-review` | Improves boundaries, removes stale complexity, and reviews real risk |
 | Interface quality | `interface-craft` | Applies taste, usability, resilience, and design-system discipline to UI work |
 | Continuity and governance | `handoff-brief`, `work-triage`, `governance-distill` | Keeps work resumable, classifiable, and aligned with durable guidance |
@@ -29,6 +29,7 @@ output contract.
 | `verticalize-work` | Break plans into executable vertical slices | Creates worker-ready tasks without horizontal backlog sludge |
 | `test-first-delivery` | Build behavior with a failing-test-first loop | Keeps correctness work explicit and inspectable |
 | `proof-repair` | Repair broken behavior with evidence | Keeps stabilization root-cause-first |
+| `performance-research` | Improve performance from measured bottlenecks and current stack research | Prevents generic optimization advice and stale performance folklore |
 | `module-deepening` | Improve architecture through deeper modules and clearer seams | Makes architecture work concrete and testability-oriented |
 | `residue-hunt` | Find cleanup and deletion opportunities | Turns cleanup into evidence-backed work rather than taste debate |
 | `contract-review` | Review changed contracts and risks | Makes review concrete, scoped, and risk-oriented |
@@ -49,6 +50,7 @@ output contract.
 | A plan needs worker-ready slices | `verticalize-work` |
 | Correct behavior should drive implementation | `test-first-delivery` |
 | Something is broken, flaky, failing, or slow | `proof-repair` |
+| Software is slow, resource-heavy, costly, or needs performance review | `performance-research` |
 | The architecture feels shallow or tangled | `module-deepening` |
 | You suspect dead code, mocks, fallbacks, or stale bridges | `residue-hunt` |
 | A diff or boundary needs review | `contract-review` |

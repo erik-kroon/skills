@@ -21,6 +21,7 @@ agent behavior in a concrete way, and produce an output that is easy to review.
 | [verticalize-work](skills/verticalize-work/SKILL.md) | A plan needs executable slices or worker-ready tasks | Convert intent into independent vertical slices |
 | [test-first-delivery](skills/test-first-delivery/SKILL.md) | Behavior-changing work needs correctness before implementation | Write the failing behavior test, make it pass, refactor while green |
 | [proof-repair](skills/proof-repair/SKILL.md) | Behavior is broken, flaky, failing, slow, or incorrect | Build proof, find cause, patch minimally, close verification |
+| [performance-research](skills/performance-research/SKILL.md) | Software is slow, resource-heavy, costly, or needs performance review | Frame workload, measure, research the exact stack, patch the bottleneck, and guard against regression |
 | [module-deepening](skills/module-deepening/SKILL.md) | Code feels shallow, tangled, hard to test, or hard to navigate | Find deeper modules, simpler interfaces, and better locality |
 | [residue-hunt](skills/residue-hunt/SKILL.md) | Code may contain dead paths, fallback masks, mocks, TODOs, or stale bridges | Classify cleanup candidates with evidence |
 | [contract-review](skills/contract-review/SKILL.md) | A diff or boundary needs risk review | Review correctness, data safety, trust, state, permission, and verification |
@@ -34,7 +35,7 @@ The library covers the full loop I want an agent to follow on real work:
 
 - Direction: cut scope, shape contracts, and write product briefs.
 - Orientation: map unfamiliar areas, grill domain assumptions, and bootstrap repo context.
-- Delivery: slice work vertically, use test-first delivery, and repair failures with proof.
+- Delivery: slice work vertically, use test-first delivery, repair failures with proof, and improve performance from measured bottlenecks.
 - Quality: deepen modules, hunt residue, and review changed contracts.
 - Interface craft: frame direction, judge experience, scan quality, finish details, simplify flow, improve words, fortify edge cases, adapt layouts, compose space, tune type, onboard users, improve speed, systemize patterns, express personality, and tune motion.
 - Continuity: preserve handoffs, triage incoming work, and keep durable guidance coherent.
