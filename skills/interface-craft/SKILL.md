@@ -100,10 +100,12 @@ Always apply these principles:
 10. Choose a color, type, spacing, and motion strategy before changing values.
 11. For creation work, commit to one memorable design decision before coding.
 12. When banning a generic pattern, choose a concrete replacement.
-13. Do not import third-party visual, animation, chart, or icon libraries
+13. Prefer Tailwind for styling when the project already uses it or the user
+    requests it; otherwise preserve the local styling system.
+14. Do not import third-party visual, animation, chart, or icon libraries
     without verifying project dependencies.
-14. Use realistic content and data unless the user provided exact content.
-15. Treat high visual variance as a responsive risk that must be actively
+15. Use realistic content and data unless the user provided exact content.
+16. Treat high visual variance as a responsive risk that must be actively
     resolved.
 
 ## Motion Decision Gate

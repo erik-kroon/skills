@@ -103,15 +103,20 @@ Use messy, believable values where fake data is necessary.
 Before importing third-party UI, animation, icon, chart, or styling libraries,
 inspect the project dependencies.
 
+Prefer Tailwind for styling when the project already has Tailwind configured or
+the user asks for Tailwind. Use local tokens, components, and utility patterns
+through Tailwind classes instead of introducing parallel CSS systems.
+
 If the dependency is missing, either:
 
 - use existing project primitives,
 - write a dependency-free version, or
 - clearly state the install command and why the dependency is worth it.
 
-Do not assume React, Next.js, Tailwind, Framer Motion, GSAP, shadcn/ui, or a
-specific icon library unless the project already uses it or the user requested
-it.
+Do not assume React, Next.js, Framer Motion, GSAP, shadcn/ui, or a specific
+icon library unless the project already uses it or the user requested it. Do
+not add Tailwind to a project that uses another styling system unless the user
+requested Tailwind or the change includes the necessary setup.
 
 ## Build Passes
 
