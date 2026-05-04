@@ -13,7 +13,7 @@ output contract.
 | Delivery and repair | `verticalize-work`, `test-first-delivery`, `proof-repair`, `performance-research` | Turns intent into shippable slices and keeps behavior evidence-backed |
 | Code quality | `module-deepening`, `residue-hunt`, `contract-review` | Improves boundaries, removes stale complexity, and reviews real risk |
 | Interface quality | `interface-craft` | Applies intentional visual generation, taste, usability, resilience, and design-system discipline to UI work |
-| Continuity and governance | `handoff-brief`, `work-triage`, `governance-distill` | Keeps work resumable, classifiable, and aligned with durable guidance |
+| Continuity and direction | `handoff-brief`, `work-triage`, `product-direction-sync` | Keeps work resumable, classifiable, and aligned with current product direction |
 
 ## Public Skills
 
@@ -35,7 +35,7 @@ output contract.
 | `contract-review` | Review changed contracts and risks | Makes review concrete, scoped, and risk-oriented |
 | `interface-craft` | Operate UI quality through explicit modes | Keeps one public UI workflow while routing creation, redesign, critique, hardening, and polish through distinct contracts |
 | `handoff-brief` | Preserve continuity across sessions or agents | Makes continuation safe |
-| `governance-distill` | Maintain prompts, skills, policies, and durable knowledge | Keeps the agent system coherent over time |
+| `product-direction-sync` | Synchronize product-direction changes across docs, README, and work tracking | Prevents long-form PRDs or strategy changes from becoming isolated artifacts |
 
 ## When To Use Which
 
@@ -57,7 +57,7 @@ output contract.
 | UI needs creation, redesign, framing, critique, audit, finishing, copy, hardening, adaptation, layout, typography, onboarding, performance, systemization, expression, or motion review | `interface-craft` |
 | Work needs to survive a handoff | `handoff-brief` |
 | Incoming work needs a state and next action | `work-triage` |
-| Instructions or durable docs are drifting | `governance-distill` |
+| A PRD, strategy memo, or product direction change needs repo-wide artifact updates | `product-direction-sync` |
 
 ## Interface-Craft Modes
 
