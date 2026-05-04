@@ -19,12 +19,6 @@
       "references": []
     },
     {
-      "name": "governance-distill",
-      "description": "Maintain prompts, skills, policies, and durable project knowledge by extracting stable rules from repeated work and removing stale or conflicting guidance. Use when agent instructions, skills, docs, or governance are drifting.",
-      "path": "skills/governance-distill",
-      "references": []
-    },
-    {
       "name": "handoff-brief",
       "description": "Package work so a future session, teammate, or agent can continue safely with context, changed files, verification artifacts, risks, and next actions. Use before delegation, after partial work, or when closing a task that may resume later.",
       "path": "skills/handoff-brief",
@@ -70,6 +64,12 @@
       "name": "product-brief",
       "description": "Turn conversation context, codebase findings, and product intent into a PRD-style brief without assuming a specific issue tracker. Use when the user wants a PRD, product brief, feature spec, or implementation-ready product artifact.",
       "path": "skills/product-brief",
+      "references": []
+    },
+    {
+      "name": "product-direction-sync",
+      "description": "Turn extensive product-direction input into synchronized repo artifacts across docs, README, roadmap notes, and issue/work tracking. Use when a PRD, strategy memo, or direction change needs to update project context instead of becoming one isolated document.",
+      "path": "skills/product-direction-sync",
       "references": []
     },
     {
