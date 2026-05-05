@@ -7,7 +7,13 @@ description: Aggressively reset bloated repository documentation into a small se
 
 Use this skill for a heavy documentation reset. Treat markdown as disposable operational scaffolding unless it contains durable product, architecture, or workflow truth. Optimize for making the repo legible, not for preserving every document.
 
+Default to plan-only mode first: inventory and propose changes before modifying files. Apply changes only after the plan is accepted or when the user explicitly asks for write mode.
+
 Use `repo-context-bootstrap` in strict minimal durable context mode when the repo lacks clear entrypoints, domain context, or ADR conventions.
+
+## Mode
+
+Unless the user explicitly says "apply changes," produce the inventory and debloat plan first. Do not delete or rewrite files during the first pass.
 
 ## Target Shape
 
@@ -18,9 +24,34 @@ Prefer a small canonical set:
 - `CONTEXT-MAP.md`: short monorepo routing map for packages, apps, registry, scripts, tests, and docs.
 - `docs/adr/`: only durable architecture decisions that still match current code.
 - `docs/roadmap.md` or `docs/roadmap/`: optional, current, actionable roadmap only.
-- `docs/reports/`: usually delete or archive; reports are snapshots.
+- `docs/reports/`: usually delete or archive; reports are snapshots, not source of truth.
 - `docs/research/`: usually archive or delete unless curated research informs current architecture.
 - `AGENTS.md` or equivalent: at most one short repo-local agent entrypoint that points to canonical docs.
+
+Canonical docs must not duplicate each other. Each canonical document should own one clear job.
+
+## Deletion Policy
+
+A markdown file should be deleted or archived if any of these are true:
+
+- It describes architecture that no longer exists.
+- It duplicates `README.md`, `CONTEXT.md`, `CONTEXT-MAP.md`, or ADRs.
+- It is a generated report that is not actively maintained.
+- It is an old planning artifact superseded by issues, ADRs, or current roadmap.
+- It contains local paths, dirty worktree notes, or agent-session state.
+- It is too long for a future maintainer to realistically read.
+- It is speculative end-state planning not tied to current milestones.
+- It is only useful to explain how the repo got here, not what is true now.
+- It mixes product docs, roadmap, implementation diary, and agent instructions.
+- It would confuse a new contributor about what is current.
+
+Default action for stale markdown: delete.
+
+Default action for historically interesting markdown: archive only if the historical value is real.
+
+Default action for duplicated durable truth: merge into the canonical doc, then delete the original.
+
+Do not let `docs/archive/` become a new junk drawer.
 
 ## Workflow
 
@@ -37,9 +68,20 @@ Prefer a small canonical set:
    - Architecture/package layout.
    - Provider, registry, or workflow policies.
    - Roadmap, PRD, issue inventory, and agent instructions.
+   - Repeated "how to run/build/test" sections.
 4. Detect staleness:
    - Search for old package names, removed paths, stale providers, old architecture names, local absolute paths, dirty worktree notes, issue counts, stale env vars, TODO/FIXME residue, and agent/tooling noise.
    - Classify hits; do not blindly delete every match.
+   - Suggested searches:
+     ```bash
+     find . -name "*.md" \
+       -not -path "./node_modules/*" \
+       -not -path "./inspo/*" \
+       -not -path "./references/*"
+
+     rg -n "AGENT|agent|conductor|/Users/|dirty worktree|Current Worktree|I did not edit|provider precedence|api key|credential|TODO|FIXME" \
+       README.md CONTEXT.md CONTEXT-MAP.md docs -g "*.md"
+     ```
 5. Delete, merge, or archive:
    - Prefer deletion when a file has no durable value.
    - Archive only when historical value is real and future agents should not read it by default.
@@ -73,6 +115,20 @@ Prefer a small canonical set:
 - No docs that are only useful to one AI agent session.
 - No source code changes unless needed to fix documentation links.
 - No new documentation framework.
+- No archive hoarding.
+
+## Acceptance Criteria
+
+After the debloat:
+
+- A new contributor can understand the repo by reading `README.md`, `CONTEXT.md`, and `CONTEXT-MAP.md`.
+- Future agents know where to start.
+- Active work lives in the issue tracker or roadmap, not scattered markdown.
+- Durable decisions live in ADRs.
+- Historical reports are not presented as current truth.
+- No remaining canonical doc contradicts another canonical doc.
+- No local absolute paths, dirty worktree notes, or agent-session artifacts remain in canonical docs.
+- The remaining docs are short enough to be read.
 
 ## Output
 
