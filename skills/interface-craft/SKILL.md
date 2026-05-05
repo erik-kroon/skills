@@ -1,6 +1,6 @@
 ---
 name: interface-craft
-description: "Improve interface quality through a first-party design operating system: frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, onboard, speed, systemize, express, and motion. Use for UI/UX/frontend work where taste, usability, resilience, brand fit, performance, or design-system quality matters."
+description: "Improve interface quality through a first-party design operating system: create, redesign, frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, onboard, speed, systemize, express, and motion. Use for UI/UX/frontend work where taste, usability, resilience, brand fit, performance, or design-system quality matters."
 ---
 
 # Interface Craft
@@ -13,14 +13,15 @@ but make it clear, durable, and intentionally designed.
 Before changing UI code, state the working context in one line:
 
 ```text
-INTERFACE_CRAFT: surface=<product|brand|unknown> mode=<mode> context=<loaded|inferred|missing> verification=<planned>
+INTERFACE_CRAFT: surface=<product|brand|hybrid|unknown> mode=<mode> register=<quiet|standard|expressive|n/a> context=<loaded|inferred|missing> verification=<planned|limited|blocked>
 ```
 
 Use `product` for tools, dashboards, forms, settings, app shells, and repeated
 operational workflows. Use `brand` for marketing pages, portfolios, campaigns,
-editorial surfaces, and first-impression pages. If the repo has durable design
-guidance, read it before editing. If not, infer cautiously from the existing
-surface and name the assumption.
+editorial surfaces, and first-impression pages. Use `hybrid` when a product
+surface also has first-impression or storytelling weight. If the repo has
+durable design guidance, read it before editing. If not, infer cautiously from
+the existing surface and name the assumption.
 
 ## Choose A Mode
 
@@ -29,6 +30,8 @@ Pick one primary mode from the request. If the request is broad, start with
 
 | Mode | Use when | Reference |
 | --- | --- | --- |
+| `create` | Build a new page, component, flow, app shell, dashboard, or brand surface | [create.md](references/create.md) |
+| `redesign` | Materially improve an existing interface while preserving behavior and product meaning | [redesign.md](references/redesign.md) |
 | `frame` | Plan UI direction before building or redesigning | [frame.md](references/frame.md) |
 | `judge` | Critique experience quality, hierarchy, cognitive load, and fit | [judge.md](references/judge.md) |
 | `scan` | Produce prioritized technical interface findings | [scan.md](references/scan.md) |
@@ -47,9 +50,15 @@ Pick one primary mode from the request. If the request is broad, start with
 
 Common aliases map naturally: critique -> `judge`, audit -> `scan`, polish ->
 `finish`, clarify -> `word`, harden -> `fortify`, distill -> `simplify`,
-extract -> `systemize`, bolder/quieter/colorize/delight/overdrive -> `express`,
+extract -> `systemize`, bolder/quieter/colorize/delight -> `express`,
 animate -> `motion`, layout -> `compose`, typeset -> `type`, optimize ->
 `speed`.
+
+Use `create` when the task starts from little or no existing UI. Use
+`redesign` when the structure exists but needs a meaningful upgrade. Use
+`finish` when the structure is already right and the task is detail quality.
+Use `express` only when the user is explicitly asking for a stronger
+personality, color, delight, boldness, or visual ambition.
 
 ## Shared Craft Baseline
 
@@ -70,6 +79,15 @@ Always apply these principles:
    motion, touch targets.
 9. Prefer fewer high-impact changes over decorative churn.
 10. Choose a color, type, spacing, and motion strategy before changing values.
+11. Default to `quiet` or `standard` register for product surfaces unless the
+    user or existing brand clearly calls for more expression.
+12. Do not make an interface louder just to avoid looking generic; improve
+    specificity through content, hierarchy, spacing, states, and component fit.
+13. Treat high visual intensity, unusual layouts, heavy gradients, large motion,
+    and decorative media as opt-in choices that need a product reason.
+14. Do not import third-party visual, animation, chart, or icon libraries
+    without verifying project dependencies.
+15. Use realistic content and data unless the user provided exact content.
 
 ## Motion Decision Gate
 
@@ -96,12 +114,16 @@ For judge, scan, finish, simplify, express, or motion review, prefer:
 ## Guardrails
 
 - Do not turn product UI into a marketing page unless requested.
+- Do not let `create` skip repo conventions, accessibility, state coverage, or
+  responsive checks.
 - Do not add delight before clarity and resilience.
 - Do not polish unfinished behavior unless the user explicitly asks for visual exploration.
 - Do not hide critical functionality on mobile; adapt it.
 - Do not invent new primitives when an existing component should be reused.
 - Do not use a visual trope because the domain usually uses it; design from the
   specific audience, setting, and task.
+- Do not hard-ban common fonts, layouts, or libraries; reject only the generic
+  version of a pattern, then choose the simplest fitting replacement.
 - Keep guidance original and operational; borrow only abstract workflow shape,
   never pasted wording.
 

@@ -26,11 +26,12 @@
     },
     {
       "name": "interface-craft",
-      "description": "Improve interface quality through a first-party design operating system: frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, onboard, speed, systemize, express, and motion. Use for UI/UX/frontend work where taste, usability, resilience, brand fit, performance, or design-system quality matters.",
+      "description": "Improve interface quality through a first-party design operating system: create, redesign, frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, onboard, speed, systemize, express, and motion. Use for UI/UX/frontend work where taste, usability, resilience, brand fit, performance, or design-system quality matters.",
       "path": "skills/interface-craft",
       "references": [
         "skills/interface-craft/references/adapt.md",
         "skills/interface-craft/references/compose.md",
+        "skills/interface-craft/references/create.md",
         "skills/interface-craft/references/express.md",
         "skills/interface-craft/references/finish.md",
         "skills/interface-craft/references/fortify.md",
@@ -38,6 +39,7 @@
         "skills/interface-craft/references/judge.md",
         "skills/interface-craft/references/motion.md",
         "skills/interface-craft/references/onboard.md",
+        "skills/interface-craft/references/redesign.md",
         "skills/interface-craft/references/scan.md",
         "skills/interface-craft/references/simplify.md",
         "skills/interface-craft/references/speed.md",

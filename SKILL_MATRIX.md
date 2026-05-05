@@ -12,7 +12,7 @@ output contract.
 | Context and decisions | `context-map`, `domain-grill`, `repo-context-bootstrap` | Keeps agents grounded in repo language, architecture, and documented decisions |
 | Delivery and repair | `verticalize-work`, `test-first-delivery`, `proof-repair`, `performance-research` | Turns intent into shippable slices and keeps behavior evidence-backed |
 | Code quality | `module-deepening`, `residue-hunt`, `contract-review` | Improves boundaries, removes stale complexity, and reviews real risk |
-| Interface quality | `interface-craft` | Applies taste, usability, resilience, and design-system discipline to UI work |
+| Interface quality | `interface-craft` | Applies taste, usability, resilience, and design-system discipline without making UI louder than the task requires |
 | Continuity and direction | `handoff-brief`, `work-triage`, `product-direction-sync` | Keeps work resumable, classifiable, and aligned with current product direction |
 
 ## Public Skills
@@ -54,7 +54,7 @@ output contract.
 | The architecture feels shallow or tangled | `module-deepening` |
 | You suspect dead code, mocks, fallbacks, or stale bridges | `residue-hunt` |
 | A diff or boundary needs review | `contract-review` |
-| UI needs framing, critique, audit, finishing, copy, hardening, adaptation, layout, typography, onboarding, performance, systemization, expression, or motion review | `interface-craft` |
+| UI needs creation, redesign, framing, critique, audit, finishing, copy, hardening, adaptation, layout, typography, onboarding, performance, systemization, expression, or motion review | `interface-craft` |
 | Work needs to survive a handoff | `handoff-brief` |
 | Incoming work needs a state and next action | `work-triage` |
 | A PRD, strategy memo, or product direction change needs repo-wide artifact updates | `product-direction-sync` |
@@ -63,6 +63,8 @@ output contract.
 
 | Mode | Output |
 | --- | --- |
+| `create` | New UI with register, primary job, state coverage, and responsive verification |
+| `redesign` | Existing UI upgrade that preserves behavior and avoids unnecessary loudness |
 | `frame` | Design brief before UI implementation |
 | `judge` | Experience quality, cognitive-load, and persona feedback |
 | `scan` | Severity-ranked interface findings |
