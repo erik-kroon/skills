@@ -12,7 +12,7 @@ output contract.
 | Context and decisions | `context-map`, `domain-grill`, `repo-context-bootstrap` | Keeps agents grounded in repo language, architecture, and documented decisions |
 | Delivery and repair | `verticalize-work`, `test-first-delivery`, `proof-repair`, `performance-research` | Turns intent into shippable slices and keeps behavior evidence-backed |
 | Code quality | `module-deepening`, `residue-hunt`, `contract-review` | Improves boundaries, removes stale complexity, and reviews real risk |
-| Interface quality | `interface-craft` | Applies intentional visual generation, taste, usability, resilience, and design-system discipline to UI work |
+| Interface quality | `interface-craft` | Applies taste, usability, resilience, and design-system discipline to UI work |
 | Continuity and direction | `handoff-brief`, `work-triage`, `product-direction-sync` | Keeps work resumable, classifiable, and aligned with current product direction |
 
 ## Public Skills
@@ -33,7 +33,7 @@ output contract.
 | `module-deepening` | Improve architecture through deeper modules and clearer seams | Makes architecture work concrete and testability-oriented |
 | `residue-hunt` | Find cleanup and deletion opportunities | Turns cleanup into evidence-backed work rather than taste debate |
 | `contract-review` | Review changed contracts and risks | Makes review concrete, scoped, and risk-oriented |
-| `interface-craft` | Operate UI quality through explicit modes | Keeps one public UI workflow while routing creation, redesign, critique, hardening, and polish through distinct contracts |
+| `interface-craft` | Operate UI quality through explicit modes | Preserves deep UI taste without fragmenting the library |
 | `handoff-brief` | Preserve continuity across sessions or agents | Makes continuation safe |
 | `product-direction-sync` | Synchronize product-direction changes across docs, README, and work tracking | Prevents long-form PRDs or strategy changes from becoming isolated artifacts |
 
@@ -54,7 +54,7 @@ output contract.
 | The architecture feels shallow or tangled | `module-deepening` |
 | You suspect dead code, mocks, fallbacks, or stale bridges | `residue-hunt` |
 | A diff or boundary needs review | `contract-review` |
-| UI needs creation, redesign, framing, critique, audit, finishing, copy, hardening, adaptation, layout, typography, onboarding, performance, systemization, expression, or motion review | `interface-craft` |
+| UI needs framing, critique, audit, finishing, copy, hardening, adaptation, layout, typography, onboarding, performance, systemization, expression, or motion review | `interface-craft` |
 | Work needs to survive a handoff | `handoff-brief` |
 | Incoming work needs a state and next action | `work-triage` |
 | A PRD, strategy memo, or product direction change needs repo-wide artifact updates | `product-direction-sync` |
@@ -63,8 +63,6 @@ output contract.
 
 | Mode | Output |
 | --- | --- |
-| `create` | New intentionally designed interface with design decisions, state coverage, and responsive verification |
-| `redesign` | Existing interface upgrade with preserved behavior, local conventions, and verification |
 | `frame` | Design brief before UI implementation |
 | `judge` | Experience quality, cognitive-load, and persona feedback |
 | `scan` | Severity-ranked interface findings |
