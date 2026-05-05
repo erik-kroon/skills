@@ -9,11 +9,11 @@ output contract.
 | Domain | Skills | What they protect |
 | --- | --- | --- |
 | Direction and scope | `signal-cut`, `shape-contract`, `product-brief` | Prevents vague goals, oversized milestones, and premature implementation |
-| Context and decisions | `context-map`, `domain-grill`, `repo-context-bootstrap` | Keeps agents grounded in repo language, architecture, and documented decisions |
+| Context and decisions | `context-map`, `domain-grill`, `repo-context-bootstrap`, `docs-sync`, `docs-debloat` | Keeps agents grounded in repo language, architecture, documented decisions, and canonical docs |
 | Delivery and repair | `verticalize-work`, `test-first-delivery`, `proof-repair`, `performance-research` | Turns intent into shippable slices and keeps behavior evidence-backed |
 | Code quality | `module-deepening`, `residue-hunt`, `contract-review` | Improves boundaries, removes stale complexity, and reviews real risk |
-| Interface quality | `interface-craft` | Applies intentional visual generation, taste, usability, resilience, and design-system discipline to UI work |
-| Continuity and direction | `handoff-brief`, `work-triage`, `product-direction-sync` | Keeps work resumable, classifiable, and aligned with current product direction |
+| Interface quality | `interface-craft` | Applies taste, usability, resilience, and design-system discipline without making UI louder than the task requires |
+| Continuity | `handoff-brief`, `work-triage` | Keeps work resumable and classifiable |
 
 ## Public Skills
 
@@ -24,6 +24,8 @@ output contract.
 | `context-map` | Zoom out from unfamiliar code or product area | Gives orientation without jumping to action |
 | `domain-grill` | Pressure-test a plan against domain language and docs | Resolves terms, assumptions, and durable decisions |
 | `repo-context-bootstrap` | Set up repo-local agent context | Makes future skill use reliable in a repo |
+| `docs-sync` | Synchronize substantial source material into canonical repo docs | Prevents PRDs, strategy memos, architecture updates, or decision notes from becoming isolated artifacts |
+| `docs-debloat` | Reset bloated markdown into a small durable doc set | Deletes, archives, merges, and rewrites stale docs so future agents know where to start |
 | `product-brief` | Produce PRD-style product artifacts | Freezes intent without assuming a tracker |
 | `work-triage` | Categorize and state incoming work | Turns vague intake into actionable next artifacts |
 | `verticalize-work` | Break plans into executable vertical slices | Creates worker-ready tasks without horizontal backlog sludge |
@@ -33,9 +35,8 @@ output contract.
 | `module-deepening` | Improve architecture through deeper modules and clearer seams | Makes architecture work concrete and testability-oriented |
 | `residue-hunt` | Find cleanup and deletion opportunities | Turns cleanup into evidence-backed work rather than taste debate |
 | `contract-review` | Review changed contracts and risks | Makes review concrete, scoped, and risk-oriented |
-| `interface-craft` | Operate UI quality through explicit modes | Keeps one public UI workflow while routing creation, redesign, critique, hardening, and polish through distinct contracts |
+| `interface-craft` | Operate UI quality through explicit modes | Preserves deep UI taste without fragmenting the library |
 | `handoff-brief` | Preserve continuity across sessions or agents | Makes continuation safe |
-| `product-direction-sync` | Synchronize product-direction changes across docs, README, and work tracking | Prevents long-form PRDs or strategy changes from becoming isolated artifacts |
 
 ## When To Use Which
 
@@ -47,6 +48,8 @@ output contract.
 | The codebase area is unfamiliar | `context-map` |
 | A plan uses fuzzy domain language | `domain-grill` |
 | A repo needs durable agent context | `repo-context-bootstrap` |
+| Source material needs to update README, context, ADRs, roadmap, or tracker work | `docs-sync` |
+| Markdown docs are stale, duplicated, generated, or too numerous | `docs-debloat` |
 | A plan needs worker-ready slices | `verticalize-work` |
 | Correct behavior should drive implementation | `test-first-delivery` |
 | Something is broken, flaky, failing, or slow | `proof-repair` |
@@ -57,14 +60,13 @@ output contract.
 | UI needs creation, redesign, framing, critique, audit, finishing, copy, hardening, adaptation, layout, typography, onboarding, performance, systemization, expression, or motion review | `interface-craft` |
 | Work needs to survive a handoff | `handoff-brief` |
 | Incoming work needs a state and next action | `work-triage` |
-| A PRD, strategy memo, or product direction change needs repo-wide artifact updates | `product-direction-sync` |
 
 ## Interface-Craft Modes
 
 | Mode | Output |
 | --- | --- |
-| `create` | New intentionally designed interface with design decisions, state coverage, and responsive verification |
-| `redesign` | Existing interface upgrade with preserved behavior, local conventions, and verification |
+| `create` | New UI with register, primary job, state coverage, and responsive verification |
+| `redesign` | Existing UI upgrade that preserves behavior and avoids unnecessary loudness |
 | `frame` | Design brief before UI implementation |
 | `judge` | Experience quality, cognitive-load, and persona feedback |
 | `scan` | Severity-ranked interface findings |

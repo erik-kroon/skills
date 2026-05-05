@@ -15,6 +15,7 @@ rewrite.
 - `Implementation`: the hidden work behind the interface.
 - `Seam`: the place behavior can be varied or tested.
 - `Depth`: useful behavior hidden behind a small interface.
+- `Leverage`: what callers get from depth.
 - `Locality`: related knowledge and change concentrated in one place.
 
 ## Workflow
@@ -29,9 +30,11 @@ rewrite.
 3. Apply the deletion test:
    - If deleting a module makes complexity vanish, it may be accidental.
    - If deleting it spreads complexity across callers, it may be earning its keep.
+   - If there is only one adapter, treat the seam as hypothetical until a real second use, test value, or operational variation justifies it.
 4. Present candidates:
    - Do not implement yet unless asked.
    - Make benefits concrete: locality, leverage, testability, deletion, or simpler callers.
+   - Call out ADR conflicts only when the friction is real enough to warrant revisiting the decision.
 5. If selected, shape the refactor:
    - Interface.
    - Migration sequence.

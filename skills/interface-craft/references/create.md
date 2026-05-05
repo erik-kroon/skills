@@ -1,154 +1,100 @@
 # Create Mode
 
-Use create mode for net-new UI generation: pages, app shells, dashboards,
-landing pages, components, flows, and branded surfaces.
+Use create mode for net-new UI: pages, app shells, dashboards, components,
+flows, landing pages, and brand surfaces.
 
-Create mode must produce an interface that looks intentionally designed, not
-merely functional.
+Create mode should make the interface feel specific, usable, and composed. It
+should not automatically make the surface louder, more decorative, or more
+experimental.
 
 ## Creation Contract
 
-Before writing UI code, commit to:
+Before writing UI code, identify:
 
-- `Surface`
-- `Register`
-- `Variance`
-- `Density`
-- `Motion`
-- `Composition strategy`
-- `Type strategy`
-- `Palette strategy`
-- `Spacing strategy`
-- `Asset/media strategy`
-- `State strategy`
-- `Visual commitment`
-- `Verification plan`
+- `Surface`: product, brand, hybrid, or unknown.
+- `Register`: quiet, standard, or expressive.
+- `Primary job`: what the user should accomplish first.
+- `Composition`: app shell, form-first flow, dashboard, content surface, detail
+  page, comparison, editorial page, or another fitting structure.
+- `Reuse`: local components, tokens, assets, icons, and styling conventions.
+- `Content`: realistic copy and data, or the exact user-provided content.
+- `States`: loading, empty, error, success, disabled, hover, focus, and active
+  where relevant.
+- `Responsive plan`: narrow and wide behavior.
+- `Verification`: browser, screenshot, tests, or stated limitation.
 
-Do not code before these decisions are named unless the change is tiny.
+For tiny additions, keep this contract implicit and proceed.
 
-## Dials
+## Register Rules
 
-### Variance
+- `Quiet`: operational products, admin tools, dense dashboards, settings,
+  forms, developer tools, and repeated workflows. Use restrained color, clear
+  grouping, compact rhythm, and predictable controls.
+- `Standard`: most product pages and mixed surfaces. Use a clear hierarchy,
+  enough warmth to avoid template feel, and limited expressive moments.
+- `Expressive`: campaigns, portfolios, editorial pages, launches, games, or
+  brand-first surfaces. Use only when the surface benefits from stronger visual
+  identity.
 
-- `1-3`: conventional, symmetric, predictable, low risk.
-- `4-7`: offset composition, varied rhythm, selective overlap, more editorial
-  hierarchy.
-- `8-10`: asymmetry, unusual grids, bold negative space, art direction, strong
-  visual identity.
-
-High variance must collapse aggressively on mobile.
-
-### Density
-
-- `1-3`: airy, gallery-like, generous section rhythm.
-- `4-7`: standard product or marketing density.
-- `8-10`: operational cockpit, compact rows, tabular numbers, fewer cards, more
-  dividers.
-
-High density requires stronger grouping, typography, and scanning support.
-
-### Motion
-
-- `1-3`: no automatic animation; hover, focus, and active states only.
-- `4-7`: purposeful transitions and small reveals.
-- `8-10`: choreographed motion only when the surface can justify it.
-
-Motion must serve continuity, feedback, explanation, or atmosphere. Respect
-reduced motion.
-
-## Composition Strategies
-
-Pick one primary strategy before coding:
-
-- App shell with strong navigation and work canvas.
-- Editorial split.
-- Asymmetric hero with supporting object or media.
-- Dense operational dashboard.
-- Bento with mathematically intentional spans.
-- Timeline or process flow.
-- Immersive brand scene.
-- Form-first conversion flow.
-- Comparison or pricing architecture.
-- Content or index surface.
-- Detail page with primary object and supporting metadata.
-
-Do not default to centered hero plus three equal cards unless that is explicitly
-the best fit.
-
-## Anti-Slop Replacements
-
-If you reject a generic pattern, replace it with a specific alternative.
-
-| Avoid | Replace with |
-| --- | --- |
-| Centered hero plus three cards | Split hero, editorial hierarchy, or asymmetric proof section |
-| Purple-blue AI gradient | One restrained accent with coherent neutrals |
-| Generic cards everywhere | Dividers, grouped rows, panels only where elevation matters |
-| Fake round metrics | Organic realistic data |
-| Placeholder names | Contextual names and entities |
-| Decorative icons | Icons that clarify action, state, or category |
-| Stock-looking empty media | Project assets, generated assets, SVG primitives, or honest placeholders |
-| Motion for coolness | Motion for continuity, feedback, reveal, or brand atmosphere |
-
-## Content Rules
-
-Use realistic content. Avoid `Acme`, `John Doe`, `Jane Doe`, `99%`, `1234567`,
-and generic slogans like `seamless`, `unlock`, `elevate`, or `next-gen` unless
-the user provided them.
-
-Use messy, believable values where fake data is necessary.
-
-## Dependency Rules
-
-Before importing third-party UI, animation, icon, chart, or styling libraries,
-inspect the project dependencies.
-
-Prefer Tailwind for styling when the project already has Tailwind configured or
-the user asks for Tailwind. Use local tokens, components, and utility patterns
-through Tailwind classes instead of introducing parallel CSS systems.
-
-If the dependency is missing, either:
-
-- use existing project primitives,
-- write a dependency-free version, or
-- clearly state the install command and why the dependency is worth it.
-
-Do not assume React, Next.js, Framer Motion, GSAP, shadcn/ui, or a specific
-icon library unless the project already uses it or the user requested it. Do
-not add Tailwind to a project that uses another styling system unless the user
-requested Tailwind or the change includes the necessary setup.
+When unsure, choose the quieter register. A precise interface is better than an
+overdesigned one.
 
 ## Build Passes
 
-1. Structure: semantic layout, landmarks, headings, controls.
-2. Visual system: type, color, spacing, rhythm, density.
-3. Content: realistic copy, data, labels, empty states.
-4. States: hover, focus, active, disabled, loading, empty, error, success where
-   relevant.
-5. Responsiveness: narrow, medium, wide.
-6. Motion/media: purposeful, performant, reduced-motion safe.
-7. Cleanup: no unused imports, dead placeholders, broken assets, or generic
-   scaffolding.
+1. Structure: semantic layout, landmarks, headings, controls, and navigation.
+2. Hierarchy: primary action, scan path, grouping, and density.
+3. System fit: reuse local components, spacing, color, typography, and icons.
+4. Content: replace placeholders with realistic labels, names, data, and empty
+   states.
+5. Interaction: hover, focus, active, disabled, loading, empty, error, and
+   success states where relevant.
+6. Responsiveness: verify narrow and wide layouts without overlap or hidden
+   primary actions.
+7. Cleanup: remove unused imports, dead placeholders, broken assets, and
+   unverified dependencies.
+
+## Pattern Checks
+
+Avoid generic AI defaults, but do not overcorrect into spectacle.
+
+| Weak default | Better replacement |
+| --- | --- |
+| Centered hero plus three identical cards | Structure that matches the actual job: form, dashboard, comparison, detail, index, or editorial layout |
+| Purple-blue glow palette | A restrained palette with one purposeful accent and readable neutrals |
+| Cards around everything | Dividers, rows, sections, or panels only where framing helps |
+| Fake round metrics | Believable values, labels, ranges, and timestamps |
+| Decorative icons | Icons that clarify action, state, category, or object type |
+| Motion for visual noise | Motion for feedback, continuity, reveal, or orientation |
+
+## Dependency Rules
+
+Inspect project dependencies before importing third-party UI, animation, icon,
+chart, or styling libraries.
+
+If a dependency is missing, either use existing primitives, write a
+dependency-free version, or state the install command and why it is worth it.
+Do not assume React, Next.js, Tailwind, Framer Motion, GSAP, shadcn/ui, or a
+specific icon library unless the project already uses it or the user requested
+it.
 
 ## Verification
 
 At minimum verify:
 
 - Primary job is obvious.
-- Visual commitment is visible in the result.
-- No centered-hero, three-card, or default-gradient slop unless justified.
+- Register matches the surface.
+- Local design conventions are respected.
 - Narrow layout preserves priority.
 - Wide layout does not look stretched or empty.
-- Interactive states exist.
-- Loading, empty, and error states exist where relevant.
-- Contrast, focus, keyboard, and touch targets are acceptable.
-- No unverified dependency imports.
-- No broken images or placeholder copy unless accepted.
+- Interactive and async states exist where relevant.
+- Contrast, focus, keyboard path, and touch targets are acceptable.
+- No broken images, placeholder content, or unverified dependency imports.
 
 ## Output
 
-- `Create preflight`
-- `Design decisions`
+- `Create mode`
+- `Register`
+- `Primary job`
 - `Implementation summary`
 - `State coverage`
 - `Responsive verification`

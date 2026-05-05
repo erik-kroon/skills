@@ -16,6 +16,8 @@ agent behavior in a concrete way, and produce an output that is easy to review.
 | [context-map](skills/context-map/SKILL.md) | You need to zoom out from unfamiliar code or product area | Map modules, callers, data flow, terms, and next inspection |
 | [domain-grill](skills/domain-grill/SKILL.md) | A plan needs pressure-testing against domain language and docs | Resolve terms, assumptions, scenarios, and durable decisions |
 | [repo-context-bootstrap](skills/repo-context-bootstrap/SKILL.md) | A repo lacks agent-readable context or skill setup | Establish repo guidance, domain docs, ADR layout, and work conventions |
+| [docs-sync](skills/docs-sync/SKILL.md) | Substantial source material needs to update canonical repo docs | Synchronize README, context docs, ADRs, roadmap, and work tracking |
+| [docs-debloat](skills/docs-debloat/SKILL.md) | Markdown sprawl needs an aggressive reset | Delete, archive, merge, and rewrite docs into a small canonical set |
 | [product-brief](skills/product-brief/SKILL.md) | Conversation or feature intent needs a PRD-style artifact | Turn intent into requirements, constraints, risks, and acceptance checks |
 | [work-triage](skills/work-triage/SKILL.md) | Incoming work needs categorization and next state | Move vague intake through a clear state machine |
 | [verticalize-work](skills/verticalize-work/SKILL.md) | A plan needs executable slices or worker-ready tasks | Convert intent into independent vertical slices |
@@ -25,20 +27,19 @@ agent behavior in a concrete way, and produce an output that is easy to review.
 | [module-deepening](skills/module-deepening/SKILL.md) | Code feels shallow, tangled, hard to test, or hard to navigate | Find deeper modules, simpler interfaces, and better locality |
 | [residue-hunt](skills/residue-hunt/SKILL.md) | Code may contain dead paths, fallback masks, mocks, TODOs, or stale bridges | Classify cleanup candidates with evidence |
 | [contract-review](skills/contract-review/SKILL.md) | A diff or boundary needs risk review | Review correctness, data safety, trust, state, permission, and verification |
-| [interface-craft](skills/interface-craft/SKILL.md) | UI/UX/frontend work needs intentional visual generation, usability, resilience, speed, brand fit, or design-system quality | Choose a mode: create, redesign, frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, onboard, speed, systemize, express, or motion |
+| [interface-craft](skills/interface-craft/SKILL.md) | UI/UX/frontend work needs taste, resilience, speed, brand fit, or design-system quality | Choose a mode: create, redesign, frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, onboard, speed, systemize, express, or motion |
 | [handoff-brief](skills/handoff-brief/SKILL.md) | Work must survive delegation or context switch | Capture context, verification, risks, and the next executable action |
-| [product-direction-sync](skills/product-direction-sync/SKILL.md) | Long-form product direction needs to update repo docs, README, and work tracking | Synchronize direction changes across durable repo artifacts |
 
 ## Coverage
 
 The library covers the full loop I want an agent to follow on real work:
 
 - Direction: cut scope, shape contracts, and write product briefs.
-- Orientation: map unfamiliar areas, grill domain assumptions, and bootstrap repo context.
+- Orientation: map unfamiliar areas, grill domain assumptions, bootstrap repo context, sync docs, and debloat stale markdown.
 - Delivery: slice work vertically, use test-first delivery, repair failures with proof, and improve performance from measured bottlenecks.
 - Quality: deepen modules, hunt residue, and review changed contracts.
 - Interface craft: create new UI, redesign existing UI, frame direction, judge experience, scan quality, finish details, simplify flow, improve words, fortify edge cases, adapt layouts, compose space, tune type, onboard users, improve speed, systemize patterns, express personality, and tune motion.
-- Continuity: preserve handoffs, triage incoming work, and keep product direction coherent across repo artifacts.
+- Continuity: preserve handoffs and triage incoming work.
 
 ## Docs
 

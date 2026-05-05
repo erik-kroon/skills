@@ -1,7 +1,11 @@
 # Redesign Mode
 
 Use redesign mode when an existing interface should be materially improved
-without losing behavior, information architecture, or product familiarity.
+without losing behavior, information architecture, terminology, or product
+familiarity.
+
+Redesign mode should upgrade the interface. It should not erase the product's
+working shape or make the UI louder than the task requires.
 
 ## Redesign Contract
 
@@ -10,20 +14,36 @@ Before changing code, identify:
 - What must remain recognizable.
 - What behavior must not change.
 - Existing design-system primitives to preserve.
-- Current visual failure.
-- Target register.
+- Current failure: hierarchy, density, clarity, responsiveness, states,
+  accessibility, or expression.
+- Target register: quiet, standard, or expressive.
 - Upgrade strategy.
-- Risk to usability, accessibility, or implementation.
+- Risk to usability, accessibility, implementation, or product meaning.
 
-## Redesign Moves
+## Upgrade Strategy
 
-- Preserve task flow before changing aesthetics.
-- Improve hierarchy before decoration.
-- Reuse local components unless they are the source of the problem.
-- Reduce generic cards, borders, glows, and placeholder content.
-- Keep existing terminology unless it is unclear.
-- Upgrade state coverage and responsive behavior.
-- Avoid changing navigation, density, or information priority without reason.
+Prefer this order:
+
+1. Preserve the core task flow.
+2. Fix hierarchy, grouping, spacing, and density.
+3. Improve labels, content, and state coverage.
+4. Reuse local components and tokens where they still fit.
+5. Adjust color, type, media, or motion only when they support the target
+   register.
+
+Do not change navigation, density, information priority, or terminology without
+a concrete reason.
+
+## Loudness Brake
+
+Before making a visual change stronger, ask:
+
+- Does this help the user understand, decide, or act?
+- Is this a brand-first surface, or a repeated-use product surface?
+- Would a simpler hierarchy, spacing, copy, or state fix solve the issue?
+- Will this still feel appropriate after the tenth use?
+
+If the answer is unclear, choose the quieter option.
 
 ## Verification
 
@@ -33,15 +53,15 @@ At minimum verify:
 - Existing product meaning and terminology are preserved or intentionally
   improved.
 - Local design-system conventions are reused where they still fit.
-- The target register is visible without creating brand-page theater.
+- Target register is visible without creating brand-page theater.
 - States, focus, contrast, and responsive behavior are not degraded.
 
 ## Output
 
+- `Redesign mode`
 - `Current failure`
 - `Preserved behavior`
 - `Design-system reuse`
 - `Upgrade strategy`
-- `Changes`
 - `Verification`
 - `Remaining risks`

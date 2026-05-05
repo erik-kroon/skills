@@ -13,6 +13,18 @@
       "references": []
     },
     {
+      "name": "docs-debloat",
+      "description": "Aggressively reset bloated repository documentation into a small set of durable canonical docs. Use when a repo has too many markdown files, stale plans, generated reports, agent notes, old PRDs, duplicated context, or documentation that should be deleted, archived, or consolidated.",
+      "path": "skills/docs-debloat",
+      "references": []
+    },
+    {
+      "name": "docs-sync",
+      "description": "Synchronize substantial source material into coherent repo documentation across README, CONTEXT, CONTEXT-MAP, docs, ADRs, roadmap notes, and issue/work tracking. Use when a PRD, strategy memo, decision note, architecture update, or docs drift needs to update canonical repo context instead of becoming one isolated document.",
+      "path": "skills/docs-sync",
+      "references": []
+    },
+    {
       "name": "domain-grill",
       "description": "Stress-test a plan, feature, or architecture decision against repo domain language, existing code, and documented decisions. Use when the user wants to be grilled, terminology is fuzzy, or a decision should update CONTEXT.md or ADRs.",
       "path": "skills/domain-grill",
@@ -26,7 +38,7 @@
     },
     {
       "name": "interface-craft",
-      "description": "Operate UI/UX/frontend work through a mode-routed design system: create, redesign, frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, onboard, speed, systemize, express, and motion. Use when interface work needs intentional visual generation, usability, resilience, brand fit, performance, or design-system quality.",
+      "description": "Improve interface quality through a first-party design operating system: create, redesign, frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, onboard, speed, systemize, express, and motion. Use for UI/UX/frontend work where taste, usability, resilience, brand fit, performance, or design-system quality matters.",
       "path": "skills/interface-craft",
       "references": [
         "skills/interface-craft/references/adapt.md",
@@ -64,12 +76,6 @@
       "name": "product-brief",
       "description": "Turn conversation context, codebase findings, and product intent into a PRD-style brief without assuming a specific issue tracker. Use when the user wants a PRD, product brief, feature spec, or implementation-ready product artifact.",
       "path": "skills/product-brief",
-      "references": []
-    },
-    {
-      "name": "product-direction-sync",
-      "description": "Turn extensive product-direction input into synchronized repo artifacts across docs, README, roadmap notes, and issue/work tracking. Use when a PRD, strategy memo, or direction change needs to update project context instead of becoming one isolated document.",
-      "path": "skills/product-direction-sync",
       "references": []
     },
     {
