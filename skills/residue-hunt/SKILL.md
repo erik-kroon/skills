@@ -1,11 +1,14 @@
 ---
 name: residue-hunt
-description: Find and prioritize cleanup of dead code, fallback masks, mocks, TODO residue, stale bridges, duplicate surfaces, and AI-generated leftovers. Use when the user asks for cleanup candidates, deletion opportunities, residue scans, or stale code review.
+description: Surface evidence-backed cleanup suggestions for dead code, fallback masks, mocks, TODO residue, stale bridges, duplicate surfaces, and AI-generated leftovers. Use when the user asks for cleanup candidates, deletion opportunities, residue scans, or stale code review.
 ---
 
 # Residue Hunt
 
-Use this skill to find cleanup work with evidence before deletion.
+Use this skill to surface cleanup suggestions with evidence. Default to a
+ranked suggestion list, similar to `improve-codebase-architecture`: identify
+opportunities, explain the friction they cause, recommend the shape of the
+cleanup, and ask which one the user wants to pursue before making changes.
 
 ## Workflow
 
@@ -18,7 +21,7 @@ Use this skill to find cleanup work with evidence before deletion.
    - Runtime references.
    - Git history when useful.
    - Docs and TODOs.
-3. Classify candidates:
+3. Classify suggestions:
    - `confirmed-dead`: no live path found.
    - `likely-dead`: no usage found, but dynamic paths need caution.
    - `fallback-mask`: fallback hides broken or missing real behavior.
@@ -29,15 +32,29 @@ Use this skill to find cleanup work with evidence before deletion.
 4. Prioritize:
    - Prefer removals that reduce future confusion or prevent wrong extension.
    - Keep rollback-safe sequencing.
-5. Recommend action:
-   - Delete, consolidate, document, test first, or defer.
+5. Present suggestions:
+   - Files and symbols involved.
+   - Problem caused by the residue.
+   - Evidence that the residue is stale, risky, or confusing.
+   - Suggested cleanup shape: delete, consolidate, document, test first, or defer.
+   - Confidence and verification needed.
+6. Ask the user which suggestion to pursue.
 
-## Finding Format
+Do not edit files during the default scan unless the user explicitly asked for
+cleanup implementation. When implementation is requested, make the smallest
+safe change and preserve the same evidence trail in the final answer.
+
+## Suggestion Format
 
 ```markdown
-| Candidate | Class | Evidence | Recommended action | Confidence |
-| --- | --- | --- | --- | --- |
-| <path/symbol> | <class> | <usage proof> | <delete/consolidate/verify/defer> | High/Medium/Low |
+1. **<short suggestion title>**
+   - Files: `<paths/symbols>`
+   - Class: `<class>`
+   - Problem: `<why this residue causes friction or risk>`
+   - Evidence: `<usage proof, missing call sites, stale docs, or runtime caveat>`
+   - Suggested cleanup: `<delete/consolidate/document/test first/defer>`
+   - Confidence: `<High/Medium/Low>`
+   - Verification needed: `<exact check or owner confirmation>`
 ```
 
 ## Guardrails
@@ -46,12 +63,14 @@ Use this skill to find cleanup work with evidence before deletion.
 - Do not delete component-library or public API surface from static evidence alone.
 - Do not remove legacy bridges without identifying the compatibility risk.
 - Do not mix cleanup recommendations with unrelated feature ideas.
+- Prefer a concise suggestion list over exhaustive low-value findings.
+- Stop at suggestions by default; only implement when asked.
 
 ## Output
 
 - `Scope`
-- `Candidates`
-- `Evidence`
+- `Suggestions`
 - `Recommended sequence`
 - `Verification needed`
 - `Risks`
+- `Question: Which suggestion should I pursue?`

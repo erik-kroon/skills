@@ -1,6 +1,6 @@
 # Skills Inventory
 
-Public skills: 18.
+Public skills: 17.
 
 ## Public Skills
 
@@ -9,7 +9,6 @@ Public skills: 18.
 - [docs-debloat](skills/docs-debloat/SKILL.md) - Aggressively reset bloated repository documentation into a small set of durable canonical docs. Use when a repo has too many markdown files, stale plans, generated reports, agent notes, old PRDs, duplicated context, or documentation that should be deleted, archived, or consolidated.
 - [docs-sync](skills/docs-sync/SKILL.md) - Synchronize substantial source material into coherent repo documentation across README, CONTEXT, CONTEXT-MAP, docs, ADRs, roadmap notes, and issue/work tracking. Use when a PRD, strategy memo, decision note, architecture update, or docs drift needs to update canonical repo context instead of becoming one isolated document.
 - [domain-grill](skills/domain-grill/SKILL.md) - Stress-test a plan, feature, or architecture decision against repo domain language, existing code, and documented decisions. Use when the user wants to be grilled, terminology is fuzzy, or a decision should update CONTEXT.md or ADRs.
-- [handoff-brief](skills/handoff-brief/SKILL.md) - Package work so a future session, teammate, or agent can continue safely with context, changed files, verification artifacts, risks, and next actions. Use before delegation, after partial work, or when closing a task that may resume later.
 - [interface-craft](skills/interface-craft/SKILL.md) - Improve interface quality through a first-party design operating system: create, redesign, frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, onboard, speed, systemize, express, and motion. Use for UI/UX/frontend work where taste, usability, resilience, brand fit, performance, or design-system quality matters.
   - references: 17 mode files
 - [module-deepening](skills/module-deepening/SKILL.md) - Find architecture deepening opportunities that create simpler interfaces, better seams, stronger locality, and more testable modules. Use when code feels shallow, tangled, over-extracted, hard to test, or difficult for agents to navigate.
@@ -17,7 +16,7 @@ Public skills: 18.
 - [product-brief](skills/product-brief/SKILL.md) - Turn conversation context, codebase findings, and product intent into a PRD-style brief without assuming a specific issue tracker. Use when the user wants a PRD, product brief, feature spec, or implementation-ready product artifact.
 - [proof-repair](skills/proof-repair/SKILL.md) - Repair broken, failing, flaky, slow, or incorrect behavior through evidence, root cause, minimal patch, and verification closure. Use for bugs, CI failures, regressions, incidents, and stabilization work.
 - [repo-context-bootstrap](skills/repo-context-bootstrap/SKILL.md) - Set up or repair repo-local agent context: agent guidance, domain docs, ADR layout, issue/work tracking conventions, labels, and skill usage notes. Use before applying a skill collection to a repo or when agents lack repo context.
-- [residue-hunt](skills/residue-hunt/SKILL.md) - Find and prioritize cleanup of dead code, fallback masks, mocks, TODO residue, stale bridges, duplicate surfaces, and AI-generated leftovers. Use when the user asks for cleanup candidates, deletion opportunities, residue scans, or stale code review.
+- [residue-hunt](skills/residue-hunt/SKILL.md) - Surface evidence-backed cleanup suggestions for dead code, fallback masks, mocks, TODO residue, stale bridges, duplicate surfaces, and AI-generated leftovers. Use when the user asks for cleanup candidates, deletion opportunities, residue scans, or stale code review.
 - [shape-contract](skills/shape-contract/SKILL.md) - Turn ambiguous or cross-surface work into an implementation contract with scope posture, requirements, risk tier, decision gates, and verification level. Use before building when requirements, sequencing, or safety are unclear.
 - [signal-cut](skills/signal-cut/SKILL.md) - Reduce scope to the smallest milestone that produces real delivery signal. Use when work is too broad, MVP scope is unclear, priorities are drifting, or the user asks what to keep, defer, freeze, or remove.
 - [test-first-delivery](skills/test-first-delivery/SKILL.md) - Build behavior-changing features and bugfixes with a failing-test-first delivery loop. Use when correctness matters, the user asks for TDD, or a change needs a verified behavior contract before implementation.

@@ -31,12 +31,6 @@
       "references": []
     },
     {
-      "name": "handoff-brief",
-      "description": "Package work so a future session, teammate, or agent can continue safely with context, changed files, verification artifacts, risks, and next actions. Use before delegation, after partial work, or when closing a task that may resume later.",
-      "path": "skills/handoff-brief",
-      "references": []
-    },
-    {
       "name": "interface-craft",
       "description": "Improve interface quality through a first-party design operating system: create, redesign, frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, onboard, speed, systemize, express, and motion. Use for UI/UX/frontend work where taste, usability, resilience, brand fit, performance, or design-system quality matters.",
       "path": "skills/interface-craft",
@@ -92,7 +86,7 @@
     },
     {
       "name": "residue-hunt",
-      "description": "Find and prioritize cleanup of dead code, fallback masks, mocks, TODO residue, stale bridges, duplicate surfaces, and AI-generated leftovers. Use when the user asks for cleanup candidates, deletion opportunities, residue scans, or stale code review.",
+      "description": "Surface evidence-backed cleanup suggestions for dead code, fallback masks, mocks, TODO residue, stale bridges, duplicate surfaces, and AI-generated leftovers. Use when the user asks for cleanup candidates, deletion opportunities, residue scans, or stale code review.",
       "path": "skills/residue-hunt",
       "references": []
     },
