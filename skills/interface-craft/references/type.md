@@ -19,6 +19,13 @@ hierarchy.
 - Use scale and weight together rather than tiny size tweaks.
 - Choose typefaces for voice and utility, not default availability.
 - Use tabular numbers for aligned metrics and tables.
+- Use slashed zero for code-adjacent or identifier-heavy interfaces when the
+  font supports it.
+- Align decimals, units, signs, and timestamps in dense data views.
+- Use `text-wrap: balance` for headings and `text-wrap: pretty` for prose when
+  supported.
+- Keep UI labels stable in size; do not use fluid type for buttons, tabs,
+  table cells, filters, or compact controls.
 - Tighten labels and metadata without damaging legibility.
 - Avoid overusing uppercase and letter spacing.
 - Verify real content, long content, and translated content.

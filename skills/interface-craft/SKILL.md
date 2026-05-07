@@ -1,6 +1,6 @@
 ---
 name: interface-craft
-description: "Improve interface quality through a first-party design operating system: create, redesign, frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, onboard, speed, systemize, express, and motion. Use for UI/UX/frontend work where taste, usability, resilience, brand fit, performance, or design-system quality matters."
+description: "Improve interface quality through a first-party design operating system: create, redesign, frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, data, onboard, speed, systemize, express, and motion. Use for UI/UX/frontend work where taste, usability, data density, resilience, brand fit, performance, or design-system quality matters."
 ---
 
 # Interface Craft
@@ -42,6 +42,7 @@ Pick one primary mode from the request. If the request is broad, start with
 | `adapt` | Make the design work across screen sizes, input methods, or contexts | [adapt.md](references/adapt.md) |
 | `compose` | Fix layout, spacing, rhythm, density, and hierarchy | [compose.md](references/compose.md) |
 | `type` | Improve typography, readability, font choices, and text hierarchy | [type.md](references/type.md) |
+| `data` | Design dense tables, dashboards, analytics, monitoring, finance, admin, or operational data surfaces | [data-dense.md](references/data-dense.md) |
 | `onboard` | Improve first-run flows, empty states, activation, and feature discovery | [onboard.md](references/onboard.md) |
 | `speed` | Improve perceived and measured interface performance | [speed.md](references/speed.md) |
 | `systemize` | Pull repeated patterns into reusable components, tokens, or design-system guidance | [systemize.md](references/systemize.md) |
@@ -52,7 +53,7 @@ Common aliases map naturally: critique -> `judge`, audit -> `scan`, polish ->
 `finish`, clarify -> `word`, harden -> `fortify`, distill -> `simplify`,
 extract -> `systemize`, bolder/quieter/colorize/delight -> `express`,
 animate -> `motion`, layout -> `compose`, typeset -> `type`, optimize ->
-`speed`.
+`speed`, dashboard/table/analytics/data-dense -> `data`.
 
 Use `create` when the task starts from little or no existing UI. Use
 `redesign` when the structure exists but needs a meaningful upgrade. Use
@@ -88,6 +89,14 @@ Always apply these principles:
 14. Do not import third-party visual, animation, chart, or icon libraries
     without verifying project dependencies.
 15. Use realistic content and data unless the user provided exact content.
+16. Treat unseen details as part of the product: press feedback, origin-aware
+    popovers, loading behavior, number alignment, keyboard path, and sensible
+    defaults all compound into perceived quality.
+17. For dense operational UI, earn compactness through structure: priority
+    columns, grouping, numeric alignment, progressive disclosure, and fast
+    controls instead of shrinking everything equally.
+18. Distinctive design requires a clear point of view, but intensity must match
+    the surface. Product UI can be memorable through precision, not spectacle.
 
 ## Motion Decision Gate
 
@@ -100,6 +109,19 @@ Before adding motion:
 5. Is it transform/opacity-based or otherwise performant?
 
 If there is no clear purpose, remove or skip the animation.
+
+Use these defaults unless the existing design system says otherwise:
+
+- Press feedback: 100-160ms, usually `transform: scale(0.97)`.
+- Tooltips and small popovers: 125-200ms.
+- Dropdowns and selects: 150-250ms.
+- Modals and drawers: 200-500ms, with the shorter end for repeated product UI.
+- Keep most user-initiated UI motion under 300ms.
+- Use stronger custom easing for purposeful UI motion, such as
+  `cubic-bezier(0.23, 1, 0.32, 1)` for crisp ease-out.
+- Never animate keyboard navigation or high-frequency command surfaces.
+- Prefer CSS transitions for dynamic, interruptible UI and springs for gestures.
+- Popovers scale from their trigger; modals stay centered.
 
 ## Review Format
 

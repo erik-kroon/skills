@@ -27,7 +27,7 @@ agent behavior in a concrete way, and produce an output that is easy to review.
 | [module-deepening](skills/module-deepening/SKILL.md) | Code feels shallow, tangled, hard to test, or hard to navigate | Find deeper modules, simpler interfaces, and better locality |
 | [residue-hunt](skills/residue-hunt/SKILL.md) | Code may contain dead paths, fallback masks, mocks, TODOs, or stale bridges | Surface ranked cleanup suggestions with evidence |
 | [contract-review](skills/contract-review/SKILL.md) | A diff or boundary needs risk review | Review correctness, data safety, trust, state, permission, and verification |
-| [interface-craft](skills/interface-craft/SKILL.md) | UI/UX/frontend work needs taste, resilience, speed, brand fit, or design-system quality | Choose a mode: create, redesign, frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, onboard, speed, systemize, express, or motion |
+| [interface-craft](skills/interface-craft/SKILL.md) | UI/UX/frontend work needs taste, resilience, data density, speed, brand fit, or design-system quality | Choose a mode: create, redesign, frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, data, onboard, speed, systemize, express, or motion |
 
 ## Coverage
 
@@ -37,7 +37,7 @@ The library covers the full loop I want an agent to follow on real work:
 - Orientation: map unfamiliar areas, grill domain assumptions, bootstrap repo context, sync docs, and debloat stale markdown.
 - Delivery: slice work vertically, use test-first delivery, repair failures with proof, and improve performance from measured bottlenecks.
 - Quality: deepen modules, hunt residue, and review changed contracts.
-- Interface craft: create new UI, redesign existing UI, frame direction, judge experience, scan quality, finish details, simplify flow, improve words, fortify edge cases, adapt layouts, compose space, tune type, onboard users, improve speed, systemize patterns, express personality, and tune motion.
+- Interface craft: create new UI, redesign existing UI, frame direction, judge experience, scan quality, finish details, simplify flow, improve words, fortify edge cases, adapt layouts, compose space, tune type, design dense data surfaces, onboard users, improve speed, systemize patterns, express personality, and tune motion.
 - Continuity: triage incoming work into the right next state.
 
 ## Docs

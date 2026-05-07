@@ -19,6 +19,10 @@ Use speed mode to improve perceived and measured interface performance.
 - Optimize images, fonts, and above-the-fold assets.
 - Keep animations on compositor-friendly properties.
 - Prefer perceived speed improvements when raw speed cannot change quickly.
+- Use intent-based prefetching only where latency is noticeable; do not prefetch
+  everything visible.
+- For dense data, prefer progressive loading, virtualization, stable row
+  heights, and cheap filtering over rendering hidden work.
 - Measure before and after when tooling exists.
 
 ## Output

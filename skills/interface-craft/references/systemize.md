@@ -11,6 +11,8 @@ assets.
 - Inconsistent variants that should be one component.
 - Local primitives that belong in the design system.
 - Repeated copy patterns that need a content convention.
+- Repeated table, filter, sort, chart, metric, status, timestamp, or bulk-action
+  patterns that should share behavior and tokens.
 
 ## Workflow
 
