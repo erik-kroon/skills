@@ -11,6 +11,7 @@ output contract.
 | Direction and scope | `signal-cut`, `shape-contract`, `product-brief` | Prevents vague goals, oversized milestones, and premature implementation |
 | Context and decisions | `context-map`, `domain-grill`, `repo-context-bootstrap`, `docs-sync`, `docs-debloat` | Keeps agents grounded in repo language, architecture, documented decisions, and canonical docs |
 | Delivery and repair | `verticalize-work`, `test-first-delivery`, `proof-repair`, `performance-research` | Turns intent into shippable slices and keeps behavior evidence-backed |
+| Framework practice | `solidjs-best-practices` | Prevents React instincts from breaking Solid reactivity, async data, SSR, and bundle boundaries |
 | Code quality | `module-deepening`, `residue-hunt`, `contract-review` | Improves boundaries, suggests stale-complexity cleanup, and reviews real risk |
 | Interface quality | `interface-craft` | Applies taste, usability, data-density, resilience, and design-system discipline without making UI louder than the task requires |
 | Continuity | `work-triage` | Keeps incoming work classifiable |
@@ -32,6 +33,7 @@ output contract.
 | `test-first-delivery` | Build behavior with a failing-test-first loop | Keeps correctness work explicit and inspectable |
 | `proof-repair` | Repair broken behavior with evidence | Keeps stabilization root-cause-first |
 | `performance-research` | Improve performance from measured bottlenecks and current stack research | Prevents generic optimization advice and stale performance folklore |
+| `solidjs-best-practices` | Apply Solid.js, Solid Router, and SolidStart best practices | Keeps Solid work aligned to fine-grained reactivity, router data APIs, SSR boundaries, owners, and bundle discipline |
 | `module-deepening` | Improve architecture through deeper modules and clearer seams | Makes architecture work concrete and testability-oriented |
 | `residue-hunt` | Suggest cleanup and deletion opportunities | Turns cleanup into evidence-backed suggestions rather than taste debate |
 | `contract-review` | Review changed contracts and risks | Makes review concrete, scoped, and risk-oriented |
@@ -53,6 +55,7 @@ output contract.
 | Correct behavior should drive implementation | `test-first-delivery` |
 | Something is broken, flaky, failing, or slow | `proof-repair` |
 | Software is slow, resource-heavy, costly, or needs performance review | `performance-research` |
+| Solid, Solid Router, or SolidStart code needs implementation, review, or refactoring | `solidjs-best-practices` |
 | The architecture feels shallow or tangled | `module-deepening` |
 | You suspect dead code, mocks, fallbacks, or stale bridges | `residue-hunt` |
 | A diff or boundary needs review | `contract-review` |
