@@ -31,7 +31,7 @@ output contract.
 | `work-triage` | Categorize and state incoming work | Turns vague intake into actionable next artifacts |
 | `verticalize-work` | Break plans into executable vertical slices | Creates worker-ready tasks without horizontal backlog sludge |
 | `test-first-delivery` | Build behavior with a failing-test-first loop | Keeps correctness work explicit and inspectable |
-| `proof-repair` | Repair broken behavior with evidence | Keeps stabilization root-cause-first |
+| `proof-repair` | Repair broken behavior with evidence | Keeps stabilization root-cause-first, including runtime instrumentation when static evidence is insufficient |
 | `performance-research` | Improve performance from measured bottlenecks and current stack research | Prevents generic optimization advice and stale performance folklore |
 | `solidjs-best-practices` | Apply Solid.js, Solid Router, and SolidStart best practices | Keeps Solid work aligned to fine-grained reactivity, router data APIs, SSR boundaries, owners, and bundle discipline |
 | `module-deepening` | Improve architecture through deeper modules and clearer seams | Makes architecture work concrete and testability-oriented |
