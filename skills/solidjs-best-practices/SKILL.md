@@ -181,10 +181,45 @@ both.
 
 ## Rule Details
 
-Read [rule-examples.md](references/rule-examples.md) when you need concrete
-before/after examples for the Solid-specific rules. Keep examples local to the
-actual codebase and adapt imports, router APIs, and SolidStart version to the
-project.
+Read the detailed rule files in `rules/` when you need concrete examples,
+review language, or implementation patterns. Each rule file follows the
+Vercel-style shape: title, impact, tags, incorrect example, correct example,
+and references.
+
+Start with:
+
+```text
+rules/async-resource-source.md
+rules/async-start-early-await-late.md
+rules/async-parallel.md
+rules/async-no-fetch-in-effect.md
+rules/async-suspense-boundaries.md
+rules/async-query-cache.md
+rules/bundle-direct-imports.md
+rules/bundle-lazy-heavy-components.md
+rules/bundle-client-only.md
+rules/server-auth-functions-actions.md
+rules/server-request-scoped-state.md
+rules/server-no-browser-apis.md
+rules/server-effects-dont-run.md
+rules/reactive-keep-props-live.md
+rules/reactive-memo-expensive-derived.md
+rules/reactive-no-effect-derived-state.md
+rules/reactive-narrow-dependencies.md
+rules/reactive-owner-cleanup.md
+rules/render-for-vs-index.md
+rules/render-show-switch-match.md
+rules/render-stable-children.md
+rules/effect-side-effects-only.md
+rules/effect-cleanup-subscriptions.md
+rules/effect-delegated-vs-native-events.md
+rules/js-index-maps.md
+rules/advanced-run-with-owner.md
+```
+
+Use `rules/_sections.md` for the category map and `rules/_template.md` when
+adding new rules. Keep examples local to the actual codebase and adapt imports,
+router APIs, and SolidStart version to the project.
 
 ## Solid-Specific Review Checklist
 
