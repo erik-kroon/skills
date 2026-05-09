@@ -104,6 +104,14 @@
       "references": []
     },
     {
+      "name": "solidjs-best-practices",
+      "description": "Apply Solid.js, Solid Router, and SolidStart best practices for fine-grained reactivity, async data, routing, SSR/SSG/streaming, resources, signals, stores, effects, control flow, bundle boundaries, and performance. Use when writing, reviewing, or refactoring Solid components, SolidStart routes/server functions/actions, router query/createAsync data flows, hydration behavior, event handling, or large-list rendering.",
+      "path": "skills/solidjs-best-practices",
+      "references": [
+        "skills/solidjs-best-practices/references/rule-examples.md"
+      ]
+    },
+    {
       "name": "test-first-delivery",
       "description": "Build behavior-changing features and bugfixes with a failing-test-first delivery loop. Use when correctness matters, the user asks for TDD, or a change needs a verified behavior contract before implementation.",
       "path": "skills/test-first-delivery",
