@@ -22,7 +22,7 @@ agent behavior in a concrete way, and produce an output that is easy to review.
 | [work-triage](skills/work-triage/SKILL.md) | Incoming work needs categorization and next state | Move vague intake through a clear state machine |
 | [verticalize-work](skills/verticalize-work/SKILL.md) | A plan needs executable slices or worker-ready tasks | Convert intent into independent vertical slices |
 | [test-first-delivery](skills/test-first-delivery/SKILL.md) | Behavior-changing work needs correctness before implementation | Write the failing behavior test, make it pass, refactor while green |
-| [proof-repair](skills/proof-repair/SKILL.md) | Behavior is broken, flaky, failing, slow, or incorrect | Build proof, find cause, patch minimally, close verification |
+| [proof-repair](skills/proof-repair/SKILL.md) | Behavior is broken, flaky, failing, slow, or incorrect | Build proof, instrument runtime evidence when needed, patch minimally, close verification |
 | [performance-research](skills/performance-research/SKILL.md) | Software is slow, resource-heavy, costly, or needs performance review | Frame workload, measure, research the exact stack, patch the bottleneck, and guard against regression |
 | [solidjs-best-practices](skills/solidjs-best-practices/SKILL.md) | Solid, Solid Router, or SolidStart code needs writing, review, or refactoring | Shape the reactive graph, async data flow, server boundaries, and bundles around Solid's model |
 | [module-deepening](skills/module-deepening/SKILL.md) | Code feels shallow, tangled, hard to test, or hard to navigate | Find deeper modules, simpler interfaces, and better locality |

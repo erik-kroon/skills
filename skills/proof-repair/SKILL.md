@@ -11,6 +11,21 @@ Core rule: no fixes without root cause evidence first. A tempting patch is not a
 repair until the failure has a proof loop, a traced cause, and a verification
 path.
 
+## Runtime Evidence Mode
+
+When the failure cannot be explained from an existing test, stack trace, or log,
+switch to runtime evidence mode. Read
+[runtime-evidence.md](references/runtime-evidence.md) and use lightweight,
+temporary instrumentation to prove or reject hypotheses before patching.
+
+Use runtime evidence mode for:
+
+- UI bugs that require a user flow to reproduce.
+- State, timing, hydration, cache, race, or event-ordering bugs.
+- Flaky behavior where normal tests only show the symptom.
+- Multi-boundary failures where values change across client/server, queue,
+  worker, database, browser, or framework boundaries.
+
 ## Workflow
 
 1. Capture the failure:
@@ -32,6 +47,8 @@ path.
      found.
    - Add the smallest useful probe at component boundaries: input, output,
      environment/config propagation, and state.
+   - For runtime-only bugs, add temporary structured logs that map each probe to
+     a hypothesis, then reproduce and analyze the logs.
    - Change one variable at a time.
 6. Patch minimally:
    - Fix the confirmed cause.
@@ -41,7 +58,7 @@ path.
 7. Close verification:
    - Original proof loop passes.
    - Nearest broader checks pass or blockers are stated.
-   - Temporary probes are removed.
+   - Temporary probes and instrumentation are removed after verification.
    - Useful regression coverage remains.
 
 ## Debugging Patterns
@@ -51,6 +68,12 @@ path.
   guardrails near dangerous operations.
 - Boundary instrumentation: in multi-component systems, log what enters and
   exits each boundary before proposing a fix.
+- Hypothesis matrix: create 3-5 plausible causes, define the exact observation
+  that would prove or reject each one, then instrument all of them in one run
+  when possible.
+- Structured runtime logs: write one JSON object per event with a run id,
+  hypothesis id, location, message, and compact data payload so evidence can be
+  compared across reproduction attempts.
 - Condition-based waiting: replace arbitrary sleeps with waits for the actual
   event, state, file, count, or URL. Keep arbitrary waits only when testing
   known timing behavior and document why.
@@ -77,6 +100,9 @@ path.
 - Do not bundle multiple hypotheses into one change.
 - Do not use sleeps for async behavior unless the delay itself is the behavior
   under test.
+- Do not leave temporary instrumentation in the final patch unless the user
+  explicitly wants durable observability.
+- Do not keep code changes made for rejected hypotheses.
 
 ## Output
 
