@@ -1,6 +1,6 @@
 # Skills Inventory
 
-Public skills: 18.
+Public skills: 20.
 
 ## Public Skills
 
@@ -9,6 +9,7 @@ Public skills: 18.
 - [docs-debloat](skills/docs-debloat/SKILL.md) - Aggressively reset bloated repository documentation into a small set of durable canonical docs. Use when a repo has too many markdown files, stale plans, generated reports, agent notes, old PRDs, duplicated context, or documentation that should be deleted, archived, or consolidated.
 - [docs-sync](skills/docs-sync/SKILL.md) - Synchronize substantial source material into coherent repo documentation across README, CONTEXT, CONTEXT-MAP, docs, ADRs, roadmap notes, and issue/work tracking. Use when a PRD, strategy memo, decision note, architecture update, or docs drift needs to update canonical repo context instead of becoming one isolated document.
 - [domain-grill](skills/domain-grill/SKILL.md) - Stress-test a plan, feature, or architecture decision against repo domain language, existing code, and documented decisions. Use when the user wants to be grilled, terminology is fuzzy, or a decision should update CONTEXT.md or ADRs.
+- [handoff](skills/handoff/SKILL.md) - Create a compact repo-local handoff document for another agent or future session to continue work. Use when the user asks to hand off, summarize current work for another workspace, preserve session state, or prepare a continuation brief.
 - [interface-craft](skills/interface-craft/SKILL.md) - Improve interface quality through a first-party design operating system: create, redesign, frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, data, onboard, speed, systemize, express, and motion. Use for UI/UX/frontend work where taste, usability, data density, resilience, brand fit, performance, or design-system quality matters.
   - references: 18 mode files
 - [module-deepening](skills/module-deepening/SKILL.md) - Find architecture deepening opportunities that create simpler interfaces, better seams, stronger locality, and more testable modules. Use when code feels shallow, tangled, over-extracted, hard to test, or difficult for agents to navigate.
@@ -16,6 +17,8 @@ Public skills: 18.
 - [product-brief](skills/product-brief/SKILL.md) - Turn conversation context, codebase findings, and product intent into a PRD-style brief without assuming a specific issue tracker. Use when the user wants a PRD, product brief, feature spec, or implementation-ready product artifact.
 - [proof-repair](skills/proof-repair/SKILL.md) - Repair broken, failing, flaky, slow, or incorrect behavior through evidence, root cause, minimal patch, and verification closure. Use for bugs, CI failures, regressions, incidents, and stabilization work.
   - references: 1 runtime evidence file
+- [prototype](skills/prototype/SKILL.md) - Build throwaway prototypes that answer a specific product, UI, state-model, API, or workflow question before production implementation. Use when the user asks to prototype, try variants, explore a UI direction, sanity-check logic, make something playable, or test whether an idea feels right.
+  - references: 2 prototype type files
 - [repo-context-bootstrap](skills/repo-context-bootstrap/SKILL.md) - Set up or repair repo-local agent context: agent guidance, domain docs, ADR layout, issue/work tracking conventions, labels, and skill usage notes. Use before applying a skill collection to a repo or when agents lack repo context.
 - [residue-hunt](skills/residue-hunt/SKILL.md) - Surface evidence-backed cleanup suggestions for dead code, fallback masks, mocks, TODO residue, stale bridges, duplicate surfaces, and AI-generated leftovers. Use when the user asks for cleanup candidates, deletion opportunities, residue scans, or stale code review.
 - [shape-contract](skills/shape-contract/SKILL.md) - Turn ambiguous or cross-surface work into an implementation contract with scope posture, requirements, risk tier, decision gates, and verification level. Use before building when requirements, sequencing, or safety are unclear.

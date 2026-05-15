@@ -31,6 +31,12 @@
       "references": []
     },
     {
+      "name": "handoff",
+      "description": "Create a compact repo-local handoff document for another agent or future session to continue work. Use when the user asks to hand off, summarize current work for another workspace, preserve session state, or prepare a continuation brief.",
+      "path": "skills/handoff",
+      "references": []
+    },
+    {
       "name": "interface-craft",
       "description": "Improve interface quality through a first-party design operating system: create, redesign, frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, data, onboard, speed, systemize, express, and motion. Use for UI/UX/frontend work where taste, usability, data density, resilience, brand fit, performance, or design-system quality matters.",
       "path": "skills/interface-craft",
@@ -79,6 +85,15 @@
       "path": "skills/proof-repair",
       "references": [
         "skills/proof-repair/references/runtime-evidence.md"
+      ]
+    },
+    {
+      "name": "prototype",
+      "description": "Build throwaway prototypes that answer a specific product, UI, state-model, API, or workflow question before production implementation. Use when the user asks to prototype, try variants, explore a UI direction, sanity-check logic, make something playable, or test whether an idea feels right.",
+      "path": "skills/prototype",
+      "references": [
+        "skills/prototype/references/logic.md",
+        "skills/prototype/references/ui.md"
       ]
     },
     {

@@ -10,11 +10,12 @@ output contract.
 | --- | --- | --- |
 | Direction and scope | `signal-cut`, `shape-contract`, `product-brief` | Prevents vague goals, oversized milestones, and premature implementation |
 | Context and decisions | `context-map`, `domain-grill`, `repo-context-bootstrap`, `docs-sync`, `docs-debloat` | Keeps agents grounded in repo language, architecture, documented decisions, and canonical docs |
+| Exploration | `prototype` | Tests uncertain logic, UI, state, and workflow decisions before production implementation |
 | Delivery and repair | `verticalize-work`, `test-first-delivery`, `proof-repair`, `performance-research` | Turns intent into shippable slices and keeps behavior evidence-backed |
 | Framework practice | `solidjs-best-practices` | Prevents React instincts from breaking Solid reactivity, async data, SSR, and bundle boundaries |
 | Code quality | `module-deepening`, `residue-hunt`, `contract-review` | Improves boundaries, suggests stale-complexity cleanup, and reviews real risk |
 | Interface quality | `interface-craft` | Applies taste, usability, data-density, resilience, and design-system discipline without making UI louder than the task requires |
-| Continuity | `work-triage` | Keeps incoming work classifiable |
+| Continuity | `work-triage`, `handoff` | Keeps incoming work classifiable and makes session transfer explicit |
 
 ## Public Skills
 
@@ -29,6 +30,7 @@ output contract.
 | `docs-debloat` | Reset bloated markdown into a small durable doc set | Deletes, archives, merges, and rewrites stale docs so future agents know where to start |
 | `product-brief` | Produce PRD-style product artifacts | Freezes intent without assuming a tracker |
 | `work-triage` | Categorize and state incoming work | Turns vague intake into actionable next artifacts |
+| `prototype` | Build throwaway logic or UI artifacts to answer one question | Lets uncertain decisions be tested before production implementation |
 | `verticalize-work` | Break plans into executable vertical slices | Creates worker-ready tasks without horizontal backlog sludge |
 | `test-first-delivery` | Build behavior with a failing-test-first loop | Keeps correctness work explicit and inspectable |
 | `proof-repair` | Repair broken behavior with evidence | Keeps stabilization root-cause-first, including runtime instrumentation when static evidence is insufficient |
@@ -38,6 +40,7 @@ output contract.
 | `residue-hunt` | Suggest cleanup and deletion opportunities | Turns cleanup into evidence-backed suggestions rather than taste debate |
 | `contract-review` | Review changed contracts and risks | Makes review concrete, scoped, and risk-oriented |
 | `interface-craft` | Operate UI quality through explicit modes | Preserves deep UI taste without fragmenting the library |
+| `handoff` | Capture continuation state for another agent or future session | Keeps handoffs short, repo-local, and action-oriented |
 
 ## When To Use Which
 
@@ -51,6 +54,7 @@ output contract.
 | A repo needs durable agent context | `repo-context-bootstrap` |
 | Source material needs to update README, context, ADRs, roadmap, or tracker work | `docs-sync` |
 | Markdown docs are stale, duplicated, generated, or too numerous | `docs-debloat` |
+| An uncertain UI, state model, API, or workflow needs trying before production work | `prototype` |
 | A plan needs worker-ready slices | `verticalize-work` |
 | Correct behavior should drive implementation | `test-first-delivery` |
 | Something is broken, flaky, failing, or slow | `proof-repair` |
@@ -61,6 +65,7 @@ output contract.
 | A diff or boundary needs review | `contract-review` |
 | UI needs creation, redesign, framing, critique, audit, finishing, copy, hardening, adaptation, layout, typography, dense data design, onboarding, performance, systemization, expression, or motion review | `interface-craft` |
 | Incoming work needs a state and next action | `work-triage` |
+| Another agent or future session needs to continue the work | `handoff` |
 
 ## Interface-Craft Modes
 
