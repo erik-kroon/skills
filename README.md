@@ -20,6 +20,7 @@ agent behavior in a concrete way, and produce an output that is easy to review.
 | [docs-debloat](skills/docs-debloat/SKILL.md) | Markdown sprawl needs an aggressive reset | Delete, archive, merge, and rewrite docs into a small canonical set |
 | [product-brief](skills/product-brief/SKILL.md) | Conversation or feature intent needs a PRD-style artifact | Turn intent into requirements, constraints, risks, and acceptance checks |
 | [work-triage](skills/work-triage/SKILL.md) | Incoming work needs categorization and next state | Move vague intake through a clear state machine |
+| [prototype](skills/prototype/SKILL.md) | An idea needs to be tried before production implementation | Build a throwaway logic or UI prototype that answers one question |
 | [verticalize-work](skills/verticalize-work/SKILL.md) | A plan needs executable slices or worker-ready tasks | Convert intent into independent vertical slices |
 | [test-first-delivery](skills/test-first-delivery/SKILL.md) | Behavior-changing work needs correctness before implementation | Write the failing behavior test, make it pass, refactor while green |
 | [proof-repair](skills/proof-repair/SKILL.md) | Behavior is broken, flaky, failing, slow, or incorrect | Build proof, instrument runtime evidence when needed, patch minimally, close verification |
@@ -29,6 +30,7 @@ agent behavior in a concrete way, and produce an output that is easy to review.
 | [residue-hunt](skills/residue-hunt/SKILL.md) | Code may contain dead paths, fallback masks, mocks, TODOs, or stale bridges | Surface ranked cleanup suggestions with evidence |
 | [contract-review](skills/contract-review/SKILL.md) | A diff or boundary needs risk review | Review correctness, data safety, trust, state, permission, and verification |
 | [interface-craft](skills/interface-craft/SKILL.md) | UI/UX/frontend work needs taste, resilience, data density, speed, brand fit, or design-system quality | Choose a mode: create, redesign, frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, data, onboard, speed, systemize, express, or motion |
+| [handoff](skills/handoff/SKILL.md) | Another agent or future session needs to continue current work | Write a compact `.context/` continuation brief with status, risks, and next steps |
 
 ## Coverage
 
@@ -36,10 +38,10 @@ The library covers the full loop I want an agent to follow on real work:
 
 - Direction: cut scope, shape contracts, and write product briefs.
 - Orientation: map unfamiliar areas, grill domain assumptions, bootstrap repo context, sync docs, and debloat stale markdown.
-- Delivery: slice work vertically, use test-first delivery, repair failures with proof, and improve performance from measured bottlenecks.
+- Exploration and delivery: prototype uncertain logic or UI, slice work vertically, use test-first delivery, repair failures with proof, and improve performance from measured bottlenecks.
 - Quality: deepen modules, apply Solid/SolidStart framework rules, hunt residue, and review changed contracts.
 - Interface craft: create new UI, redesign existing UI, frame direction, judge experience, scan quality, finish details, simplify flow, improve words, fortify edge cases, adapt layouts, compose space, tune type, design dense data surfaces, onboard users, improve speed, systemize patterns, express personality, and tune motion.
-- Continuity: triage incoming work into the right next state.
+- Continuity: triage incoming work into the right next state and preserve handoffs for future sessions or sibling workspaces.
 
 ## Docs
 
