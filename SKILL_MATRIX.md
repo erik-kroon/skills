@@ -13,7 +13,7 @@ output contract.
 | Exploration | `prototype` | Tests uncertain logic, UI, state, and workflow decisions before production implementation |
 | Delivery and repair | `verticalize-work`, `test-first-delivery`, `proof-repair`, `performance-research` | Turns intent into shippable slices and keeps behavior evidence-backed |
 | Framework practice | `solidjs-best-practices` | Prevents React instincts from breaking Solid reactivity, async data, SSR, and bundle boundaries |
-| Code quality | `module-deepening`, `residue-hunt`, `contract-review` | Improves boundaries, suggests stale-complexity cleanup, and reviews real risk |
+| Code quality | `module-deepening`, `zero-tech-debt`, `residue-hunt`, `contract-review` | Improves boundaries, reshapes patches toward clean end states, suggests stale-complexity cleanup, and reviews real risk |
 | Interface quality | `interface-craft` | Applies taste, usability, data-density, resilience, and design-system discipline without making UI louder than the task requires |
 | Continuity | `work-triage`, `handoff` | Keeps incoming work classifiable and makes session transfer explicit |
 
@@ -37,6 +37,7 @@ output contract.
 | `performance-research` | Improve performance from measured bottlenecks and current stack research | Prevents generic optimization advice and stale performance folklore |
 | `solidjs-best-practices` | Apply Solid.js, Solid Router, and SolidStart best practices | Keeps Solid work aligned to fine-grained reactivity, router data APIs, SSR boundaries, owners, and bundle discipline |
 | `module-deepening` | Improve architecture through deeper modules and clearer seams | Makes architecture work concrete and testability-oriented |
+| `zero-tech-debt` | Rework an existing change as the intended final shape | Deletes unused compatibility, stale fallbacks, accidental complexity, and historical naming before they harden |
 | `residue-hunt` | Suggest cleanup and deletion opportunities | Turns cleanup into evidence-backed suggestions rather than taste debate |
 | `contract-review` | Review changed contracts and risks | Makes review concrete, scoped, and risk-oriented |
 | `interface-craft` | Operate UI quality through explicit modes | Preserves deep UI taste without fragmenting the library |
@@ -61,6 +62,7 @@ output contract.
 | Software is slow, resource-heavy, costly, or needs performance review | `performance-research` |
 | Solid, Solid Router, or SolidStart code needs implementation, review, or refactoring | `solidjs-best-practices` |
 | The architecture feels shallow or tangled | `module-deepening` |
+| An existing patch should be rebuilt as if the final UX or architecture had existed from day one | `zero-tech-debt` |
 | You suspect dead code, mocks, fallbacks, or stale bridges | `residue-hunt` |
 | A diff or boundary needs review | `contract-review` |
 | UI needs creation, redesign, framing, critique, audit, finishing, copy, hardening, adaptation, layout, typography, dense data design, onboarding, performance, systemization, expression, or motion review | `interface-craft` |

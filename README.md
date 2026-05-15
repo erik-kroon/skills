@@ -27,6 +27,7 @@ agent behavior in a concrete way, and produce an output that is easy to review.
 | [performance-research](skills/performance-research/SKILL.md) | Software is slow, resource-heavy, costly, or needs performance review | Frame workload, measure, research the exact stack, patch the bottleneck, and guard against regression |
 | [solidjs-best-practices](skills/solidjs-best-practices/SKILL.md) | Solid, Solid Router, or SolidStart code needs writing, review, or refactoring | Shape the reactive graph, async data flow, server boundaries, and bundles around Solid's model |
 | [module-deepening](skills/module-deepening/SKILL.md) | Code feels shallow, tangled, hard to test, or hard to navigate | Find deeper modules, simpler interfaces, and better locality |
+| [zero-tech-debt](skills/zero-tech-debt/SKILL.md) | An existing change should be reshaped as the clean final state | Delete unused compatibility, stale fallbacks, accidental complexity, and historical naming |
 | [residue-hunt](skills/residue-hunt/SKILL.md) | Code may contain dead paths, fallback masks, mocks, TODOs, or stale bridges | Surface ranked cleanup suggestions with evidence |
 | [contract-review](skills/contract-review/SKILL.md) | A diff or boundary needs risk review | Review correctness, data safety, trust, state, permission, and verification |
 | [interface-craft](skills/interface-craft/SKILL.md) | UI/UX/frontend work needs taste, resilience, data density, speed, brand fit, or design-system quality | Choose a mode: create, redesign, frame, judge, scan, finish, simplify, word, fortify, adapt, compose, type, data, onboard, speed, systemize, express, or motion |
@@ -39,7 +40,7 @@ The library covers the full loop I want an agent to follow on real work:
 - Direction: cut scope, shape contracts, and write product briefs.
 - Orientation: map unfamiliar areas, grill domain assumptions, bootstrap repo context, sync docs, and debloat stale markdown.
 - Exploration and delivery: prototype uncertain logic or UI, slice work vertically, use test-first delivery, repair failures with proof, and improve performance from measured bottlenecks.
-- Quality: deepen modules, apply Solid/SolidStart framework rules, hunt residue, and review changed contracts.
+- Quality: deepen modules, apply Solid/SolidStart framework rules, rework patches toward zero tech debt, hunt residue, and review changed contracts.
 - Interface craft: create new UI, redesign existing UI, frame direction, judge experience, scan quality, finish details, simplify flow, improve words, fortify edge cases, adapt layouts, compose space, tune type, design dense data surfaces, onboard users, improve speed, systemize patterns, express personality, and tune motion.
 - Continuity: triage incoming work into the right next state and preserve handoffs for future sessions or sibling workspaces.
 

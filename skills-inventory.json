@@ -172,6 +172,12 @@
       "description": "Triage incoming issues, bugs, feature requests, or work items through a tracker-neutral state machine. Use when deciding whether work needs info, is ready for an agent, needs a human, is out of scope, or should be closed.",
       "path": "skills/work-triage",
       "references": []
+    },
+    {
+      "name": "zero-tech-debt",
+      "description": "Rework an existing change toward the intended final UX and architecture, deleting compatibility cruft, unused modes, stale fallbacks, and accidental complexity. Use when the user asks for zero tech debt, a clean end-state refactor, or to rebuild a patch as if it had been designed correctly from day one.",
+      "path": "skills/zero-tech-debt",
+      "references": []
     }
   ]
 }

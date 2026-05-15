@@ -1,6 +1,6 @@
 # Skills Inventory
 
-Public skills: 20.
+Public skills: 21.
 
 ## Public Skills
 
@@ -28,3 +28,4 @@ Public skills: 20.
 - [test-first-delivery](skills/test-first-delivery/SKILL.md) - Build behavior-changing features and bugfixes with a failing-test-first delivery loop. Use when correctness matters, the user asks for TDD, or a change needs a verified behavior contract before implementation.
 - [verticalize-work](skills/verticalize-work/SKILL.md) - Convert a plan, PRD, idea, or backlog into independently executable vertical slices without assuming a specific issue tracker. Use when the user wants tickets, worker prompts, implementation slices, or a plan broken into agent-ready work.
 - [work-triage](skills/work-triage/SKILL.md) - Triage incoming issues, bugs, feature requests, or work items through a tracker-neutral state machine. Use when deciding whether work needs info, is ready for an agent, needs a human, is out of scope, or should be closed.
+- [zero-tech-debt](skills/zero-tech-debt/SKILL.md) - Rework an existing change toward the intended final UX and architecture, deleting compatibility cruft, unused modes, stale fallbacks, and accidental complexity. Use when the user asks for zero tech debt, a clean end-state refactor, or to rebuild a patch as if it had been designed correctly from day one.
