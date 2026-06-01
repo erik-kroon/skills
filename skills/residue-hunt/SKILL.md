@@ -1,6 +1,6 @@
 ---
 name: residue-hunt
-description: Surface evidence-backed cleanup suggestions for dead code, fallback masks, mocks, TODO residue, stale bridges, duplicate surfaces, and AI-generated leftovers. Use when the user asks for cleanup candidates, deletion opportunities, residue scans, or stale code review.
+description: Surface evidence-backed cleanup suggestions for dead code, fallback masks, speculative guards, wrappers, mode flags, mocks, TODO residue, stale bridges, duplicate surfaces, and AI-generated leftovers. Use when the user asks for cleanup candidates, deletion opportunities, residue scans, or stale code review.
 ---
 
 # Residue Hunt
@@ -9,6 +9,10 @@ Use this skill to surface cleanup suggestions with evidence. Default to a
 ranked suggestion list, similar to `improve-codebase-architecture`: identify
 opportunities, explain the friction they cause, recommend the shape of the
 cleanup, and ask which one the user wants to pursue before making changes.
+
+This is the cleanup-finder companion to `zero-tech-debt`: hunt for cruft an
+agent may have added "just in case", then classify it with evidence before any
+deletion or refactor.
 
 ## Workflow
 
@@ -21,10 +25,14 @@ cleanup, and ask which one the user wants to pursue before making changes.
    - Runtime references.
    - Git history when useful.
    - Docs and TODOs.
+   - Wrappers, adapters, flags, alternate modes, and compatibility branches.
+   - Fallbacks or guards whose only evidence is defensive imagination.
 3. Classify suggestions:
    - `confirmed-dead`: no live path found.
    - `likely-dead`: no usage found, but dynamic paths need caution.
    - `fallback-mask`: fallback hides broken or missing real behavior.
+   - `speculative-cruft`: guard, wrapper, mode flag, fallback, branch, or
+     abstraction exists for hypothetical callers or future options.
    - `mock-residue`: mocks or fixtures escaped their intended scope.
    - `legacy-bridge`: compatibility path that may still have users.
    - `hygiene-residue`: comments, TODOs, debug code, duplicate docs, stale names.
