@@ -104,7 +104,7 @@
     },
     {
       "name": "residue-hunt",
-      "description": "Surface evidence-backed cleanup suggestions for dead code, fallback masks, mocks, TODO residue, stale bridges, duplicate surfaces, and AI-generated leftovers. Use when the user asks for cleanup candidates, deletion opportunities, residue scans, or stale code review.",
+      "description": "Surface evidence-backed cleanup suggestions for dead code, fallback masks, speculative guards, wrappers, mode flags, mocks, TODO residue, stale bridges, duplicate surfaces, and AI-generated leftovers. Use when the user asks for cleanup candidates, deletion opportunities, residue scans, or stale code review.",
       "path": "skills/residue-hunt",
       "references": []
     },
@@ -175,7 +175,7 @@
     },
     {
       "name": "zero-tech-debt",
-      "description": "Rework an existing change toward the intended final UX and architecture, deleting compatibility cruft, unused modes, stale fallbacks, and accidental complexity. Use when the user asks for zero tech debt, a clean end-state refactor, or to rebuild a patch as if it had been designed correctly from day one.",
+      "description": "Rework a change as if the intended UX and architecture existed from day one, deleting compatibility cruft and accidental complexity. Use when the user asks for zero tech debt, a clean end-state refactor, or to rebuild a patch toward the ideal architecture.",
       "path": "skills/zero-tech-debt",
       "references": []
     }

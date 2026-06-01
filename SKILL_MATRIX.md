@@ -37,8 +37,8 @@ output contract.
 | `performance-research` | Improve performance from measured bottlenecks and current stack research | Prevents generic optimization advice and stale performance folklore |
 | `solidjs-best-practices` | Apply Solid.js, Solid Router, and SolidStart best practices | Keeps Solid work aligned to fine-grained reactivity, router data APIs, SSR boundaries, owners, and bundle discipline |
 | `module-deepening` | Improve architecture through deeper modules and clearer seams | Makes architecture work concrete and testability-oriented |
-| `zero-tech-debt` | Rework an existing change as the intended final shape | Deletes unused compatibility, stale fallbacks, accidental complexity, and historical naming before they harden |
-| `residue-hunt` | Suggest cleanup and deletion opportunities | Turns cleanup into evidence-backed suggestions rather than taste debate |
+| `zero-tech-debt` | Rework a change as if the intended UX and architecture existed from day one | Deletes compatibility cruft, speculative guards, stale fallbacks, wrappers, and accidental complexity before they harden |
+| `residue-hunt` | Suggest cleanup and deletion opportunities | Turns dead code, fallback masks, speculative cruft, and stale bridges into evidence-backed cleanup suggestions |
 | `contract-review` | Review changed contracts and risks | Makes review concrete, scoped, and risk-oriented |
 | `interface-craft` | Operate UI quality through explicit modes | Preserves deep UI taste without fragmenting the library |
 | `handoff` | Capture continuation state for another agent or future session | Keeps handoffs short, repo-local, and action-oriented |
@@ -63,7 +63,7 @@ output contract.
 | Solid, Solid Router, or SolidStart code needs implementation, review, or refactoring | `solidjs-best-practices` |
 | The architecture feels shallow or tangled | `module-deepening` |
 | An existing patch should be rebuilt as if the final UX or architecture had existed from day one | `zero-tech-debt` |
-| You suspect dead code, mocks, fallbacks, or stale bridges | `residue-hunt` |
+| You suspect dead code, mocks, fallbacks, wrappers, mode flags, speculative guards, or stale bridges | `residue-hunt` |
 | A diff or boundary needs review | `contract-review` |
 | UI needs creation, redesign, framing, critique, audit, finishing, copy, hardening, adaptation, layout, typography, dense data design, onboarding, performance, systemization, expression, or motion review | `interface-craft` |
 | Incoming work needs a state and next action | `work-triage` |
